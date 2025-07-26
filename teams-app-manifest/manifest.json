@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.14",
+  "version": "1.0.0",
+  "id": "{{TEAMS_APP_ID}}",
+  "packageName": "com.microsoft.teams.openai.bot",
+  "developer": {
+    "name": "Your Organization",
+    "websiteUrl": "https://your-website.com",
+    "privacyUrl": "https://your-website.com/privacy",
+    "termsOfUseUrl": "https://your-website.com/terms"
+  },
+  "name": {
+    "short": "Azure OpenAI Bot",
+    "full": "Azure OpenAI Teams Chatbot"
+  },
+  "description": {
+    "short": "AI-powered chatbot using Azure OpenAI",
+    "full": "A Microsoft Teams bot powered by Azure OpenAI that can help with conversations, answer questions, and provide assistance in a professional workplace environment."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [
+    {
+      "botId": "{{TEAMS_APP_ID}}",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": [
+            "personal",
+            "team",
+            "groupchat"
+          ],
+          "commands": [
+            {
+              "id": "help",
+              "type": "action",
+              "context": [
+                "message"
+              ],
+              "description": "Show help information",
+              "title": "Help",
+              "fetchTask": false
+            },
+            {
+              "id": "clear",
+              "type": "action",
+              "context": [
+                "message"
+              ],
+              "description": "Clear conversation history",
+              "title": "Clear History",
+              "fetchTask": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{BOT_DOMAIN}}"
+  ],
+  "webApplicationInfo": {
+    "id": "{{TEAMS_APP_ID}}",
+    "resource": "https://{{BOT_DOMAIN}}"
+  }
+} 

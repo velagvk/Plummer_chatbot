@@ -1,0 +1,667 @@
+﻿"ID","Ticket Title","Support_Request","Ticket_Type","Ticket Class","Status","IT_TECH_Scope","IT_TECH_Impact","VScope","VImpact","VPriority","Tech_Tag","Resolution_Tag","Created","CreatedBy","Modified","ModifiedBy","CreatedEmail","FirstName","LastName","JobTitle","Department","Office","MobilePhone","CreatedDay","CreatedMonth","CreatedYear","IT_TECH_Team","IT_TECH_Location","Assigned To","XRef%23","VLeadership","Assigned Date","Type of Ticket Request","SLA Alert","CC","Created By","Modified By","Created For","HRGroup","Project Link","Offboarding-CalendarUpdate","Closed","Closed Date","Created_For_FirstName","Created_For_LastName","Created_For_JobTitle","Created_For_Department","Created_For_Office","Created_For_MobilePhone","Created_For_Email","IND_ID","Priority"
+"1","Kirantest_Dev","This ticket is to test the latest data source.","Technical Support",,"7. Closed - Unresolved","zOthers - see Notes","No productivity loss","0","1","1","Apps - CAD",,"5/8/2024 7:30 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"08","May","2024",,,"Kumar, Kiran","10","No",,,"No","Kumar, Kiran","IT Messenger","Dontamsetty, Vidyasagar",,,"/sites/ITTicketSystem/Lists/Onboarding/AllItems.aspx?isAscending=false&sortField=Parent%5Fx0020%5FID",,"1/22/2025 11:39 PM","11/28/2024 10:30 AM",,,,,,,,"1","4 - Normal"
+"2","Kiran Test2","Test for automation process.","Technical Support",,"9. Reopen","zOthers - see Notes","No productivity loss","0","1","1",,,"5/8/2024 9:37 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"08","May","2024",,,"Kumar, Kiran",,"No",,,"No","KiranTest","IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","10/21/2024 11:39 AM",,,,,,,,"2","4 - Normal"
+"3","Testing Email - Laptop issue",,"Technical Support",,"7. Closed - Unresolved",,,"0","0","0",,,"5/8/2024 11:25 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Dontamsetty","Vidyasagar","Contractor-BI Analyst/Developer",,"Remote",,"08","May","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/8/2024 11:25 AM",,,,,,,,"3",
+"4","Test- System network issue",,"Technical Support",,"4. Closed - Resolved","zOthers - see Notes","Slight loss of productivity","0","1","1",,,"5/9/2024 3:57 AM","KiranTest","1/22/2025 11:39 PM","Kumar, Kiran","KiranTest@plummer.com",,"KiranTest",,,,,"09","May","2024",,,"Kumar, Kiran",,,,"Mail","No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","10/21/2024 11:40 AM",,,,,,,,"4","4 - Normal"
+"5","Keyboard not working",,"Technical Support",,"4. Closed - Resolved","Audio/Video (Conf Rooms, Peripheral, etc)","No productivity loss","0","1","1",,,"5/9/2024 9:37 AM","Dontamsetty, Vidyasagar","4/24/2025 7:59 AM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Dontamsetty","Vidyasagar","Contractor-BI Analyst/Developer",,"Remote",,"09","May","2024","DataSol","AUS","Kumar, Kiran",,,,"Mail","No",,"IT Messenger","Kumar, Kiran",,,,,"4/24/2025 7:59 AM","10/22/2024 5:42 AM",,,,,,,,"5","4 - Normal"
+"6","Mouse issue","Updated issue description","Technical Support",,"5. Closed - Cancelled","Hardware (Computer, Smart Device, Peripheral, etc)","Slight loss of productivity","0","1","1",,,"5/14/2024 8:22 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Dontamsetty","Vidyasagar","Contractor-BI Analyst/Developer",,"Remote",,"14","May","2024","DataSol","zOther (See Notes)","Dontamsetty, Vidyasagar",,,,"Mail","No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","8/19/2024 12:18 AM",,,,,,,,"6","4 - Normal"
+"7","KiranTest3","Testing note 1.","Technical Support",,"4. Closed - Resolved","zOthers - see Notes","Unable to work","0","4","4",,,"5/21/2024 10:27 AM","Kumar, Kiran","4/10/2025 5:56 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","IT Messenger",,,,,"4/10/2025 5:56 AM","4/10/2025 5:55 AM",,,,,,,,"7","1 - Critical"
+"8","KiranTest3",,"Technical Support",,"4. Closed - Resolved",,,"0","0","0",,,"5/21/2024 10:35 AM","Kumar, Kiran","4/23/2025 11:14 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","IT Messenger",,,,,"4/23/2025 11:14 AM","4/23/2025 11:13 AM",,,,,,,,"8",
+"9","Test3","Test for ticket notes.","Technical Support",,"4. Closed - Resolved",,,"0","0","0",,,"5/21/2024 10:46 AM","Kumar, Kiran","4/24/2025 8:08 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","IT Messenger",,,,,"4/24/2025 8:08 AM","4/24/2025 8:07 AM",,,,,,,,"9",
+"10","Test 4","This is test for testing the workflow adding item.","Technical Support",,"2. In Progress","zOthers - see Notes","Unable to work","0","4","4",,,"5/21/2024 10:52 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024","zOther (See Notes)","zOther (See Notes)","Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 2:01 AM",,,,,,,,"10","1 - Critical"
+"11","Kiran Test 5","Support request test","Technical Support",,"5. Closed - Cancelled",,,"0","0","0",,,"5/21/2024 10:57 AM","Kumar, Kiran","4/24/2025 11:24 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Kumar, Kiran",,,,,"4/24/2025 11:24 AM","4/24/2025 11:06 AM",,,,,,,,"11",
+"12","Kiran Test Note1",,"Technical Support",,"3. Pending","Audio/Video (Conf Rooms, Peripheral, etc)","No productivity loss","0","1","1",,,"5/21/2024 11:01 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/11/2024 10:32 AM",,,,,,,,"12","4 - Normal"
+"13","KiranTest Note2","This issue with ticket notes testing.","Technical Support",,"2. In Progress","zOthers - see Notes","Unable to work","0","4","4","zOther (See Notes)","zOther (See Notes)","5/21/2024 11:13 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024","zOther (See Notes)","zOther (See Notes)","Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/21/2024 11:14 AM",,,,,,,,"13","1 - Critical"
+"14","Kiran Test attachment","This ticket is to test attachment bug.","Technical Support",,"4. Closed - Resolved","zOthers - see Notes","Unable to work","0","4","4",,,"5/21/2024 11:30 AM","Kumar, Kiran","4/24/2025 9:03 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"21","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","IT Messenger",,,,,"4/24/2025 9:03 AM","4/24/2025 9:02 AM",,,,,,,,"14","1 - Critical"
+"15","KiranTestSp1","This ticket is to test for SP list copy files.","Technical Support",,"4. Closed - Resolved","zOthers - see Notes","No productivity loss","0","1","1","zOther (See Notes)",,"5/22/2024 1:49 AM","Kumar, Kiran","4/24/2025 11:26 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Kumar, Kiran",,,,"Teams","No",,"Kumar, Kiran","IT Messenger",,,,,"4/24/2025 11:26 AM","4/24/2025 11:24 AM",,,,,,,,"15","4 - Normal"
+"16","KiranTest account test1","This ticket is to test new list.","Technical Support",,"4. Closed - Resolved","zOthers - see Notes","Unable to work","0","4","4",,,"5/22/2024 3:56 AM","KiranTest","4/24/2025 11:30 AM","KiranTest","KiranTest@plummer.com","KiranTest",,,,,,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"KiranTest","IT Messenger",,,,,"4/24/2025 11:30 AM","4/24/2025 11:29 AM",,,,,,,,"16","1 - Critical"
+"17","KiranTest2","Ticket for testing Ts2.","Technical Support",,"1. New",,,"0","0","0",,,"5/22/2024 3:57 AM","KiranTest","1/22/2025 11:39 PM","KiranTest","KiranTest@plummer.com","KiranTest",,,,,,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"KiranTest","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 3:57 AM",,,,,,,,"17",
+"18","Laptop showing blue screen - Test","Sometimes my laptop turning off abruptly showing blue screen","Technical Support",,"4. Closed - Resolved","Hardware (Computer, Smart Device, Peripheral, etc)","Slight loss of productivity","0","1","1","Apps - Teams",,"5/22/2024 4:02 AM","Dontamsetty, Vidyasagar","4/29/2025 11:36 AM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024","DataSol",,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","IT Messenger",,,,,"4/29/2025 11:36 AM","4/29/2025 11:36 AM",,,,,,,,"18","4 - Normal"
+"19","KiranTest1.",,"Technical Support",,"4. Closed - Resolved",,,"0","0","0",,,"5/22/2024 4:04 AM","Kumar, Kiran","4/24/2025 11:35 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","IT Messenger",,,,,"4/24/2025 11:35 AM","4/24/2025 11:35 AM",,,,,,,,"19",
+"20","KiranTest2","Using the ticket notes2 test.","Technical Support",,"1. New",,,"0","0","0",,,"5/22/2024 4:07 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 4:07 AM",,,,,,,,"20",
+"21","KiranTest2","Test for new block.","Technical Support",,"1. New",,,"0","0","0",,,"5/22/2024 4:30 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 8:01 AM",,,,,,,,"21",
+"22","KiranTest2","This ticket is tested for using of creating new notes.","Technical Support",,"1. New","zOthers - see Notes","Unable to work","0","4","4",,,"5/22/2024 5:36 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 5:36 AM",,,,,,,,"22","1 - Critical"
+"23","KiranTest5","Ticket is for ","Technical Support",,"1. New",,,"0","0","0",,,"5/22/2024 6:03 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 6:03 AM",,,,,,,,"23",
+"24","Testing new column","added new column in SP for change","Technical Support",,"2. In Progress","Audio/Video (Conf Rooms, Peripheral, etc)","No productivity loss","0","1","1",,,"5/22/2024 6:18 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 6:38 AM",,,,,,,,"24","4 - Normal"
+"25","Test 9","This ticket is to test and remove the Black screen.","Technical Support",,"1. New",,,"0","0","0",,,"5/22/2024 6:44 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 7:56 AM",,,,,,,,"25",
+"26","KiranTest8",,"Technical Support",,"1. New",,,"0","0","0",,,"5/22/2024 6:47 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/22/2024 8:01 AM",,,,,,,,"26",
+"27","Testing one more time","Notes should work now","Technical Support",,"2. In Progress","Audio/Video (Conf Rooms, Peripheral, etc)","No productivity loss","0","1","1",,,"5/22/2024 8:12 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Kumar, Kiran","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"22","May","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 8:25 AM",,,,,,,,"27","4 - Normal"
+"28","KiranTest#5","This ticket to test created by and Modified by for workflow.","Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 8:27 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 8:27 AM",,,,,,,,"28",
+"29","KiranTest#6","This ticket is to test the app new block.","Technical Support",,"1. New","zOthers - see Notes","Unable to work","0","4","4",,,"5/23/2024 9:11 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 9:11 AM",,,,,,,,"29","1 - Critical"
+"30","Kiran Test ",,"Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 9:15 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 9:15 AM",,,,,,,,"30",
+"31","KiranTest5","Adding new notes","Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 9:22 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 9:22 AM",,,,,,,,"31",
+"32","Test2",,"Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 9:26 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 9:26 AM",,,,,,,,"32",
+"33","Test5",,"Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 9:28 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 9:28 AM",,,,,,,,"33",
+"34","Kirantest6",,"Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 9:30 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 9:30 AM",,,,,,,,"34",
+"35","KiranTest7",,"Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 9:31 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/23/2024 9:31 AM",,,,,,,,"35",
+"36","vhvbjm",,"Technical Support",,"1. New",,,"0","0","0",,,"5/23/2024 9:36 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","May","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 11:15 AM",,,,,,,,"36",
+"37","TestVidya","TestVidya","Technical Support",,"1. New",,,"0","0","0",,,"5/27/2024 10:28 AM",,"1/22/2025 11:39 PM","Kumar, Kiran",,,,,,,,"27","May","2024",,,"Kumar, Kiran",,,,"Teams","No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 11:10 AM",,,,,,,,"37",
+"38","KiranPurTest1",,"Purchase Support",,"1. New",,,"0","0","0",,,"5/30/2024 10:31 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"30","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 11:07 AM",,,,,,,,"38",
+"39","KiranPurTest2","For testing the new ticket2","Purchase Support",,"1. New",,,"0","0","0",,,"5/30/2024 10:38 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"30","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/30/2024 10:38 AM",,,,,,,,"39",
+"40","Kiran Pur request","The description about the request","Purchase Support",,"1. New",,,"0","0","0",,,"5/30/2024 11:55 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"30","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/30/2024 11:55 AM",,,,,,,,"40",
+"41","KiranPur Request 4","test2","Purchase Support",,"1. New",,,"0","0","0",,,"5/30/2024 12:12 PM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"30","May","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/30/2024 12:12 PM",,,,,,,,"41",
+"42","OnboardingTest","OnboardingTest description","HR Onboarding",,"1. New",,,"0","0","0",,,"5/31/2024 5:23 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"31","May","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","5/31/2024 7:49 AM",,,,,,,,"42",
+"43","Kiran Pur Test3","This is about to enter the info about ticket system description.","Purchase Support",,"1. New",,,"0","0","0",,,"6/3/2024 2:19 AM","Kumar, Kiran","1/22/2025 11:39 PM",,"kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"03","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/5/2024 10:37 AM",,,,,,,,"43",
+"44","Test ticket from JRL",,"Technical Support",,"1. New",,,"0","0","0",,,"6/3/2024 1:30 PM","Lockett, Johnny","1/22/2025 11:39 PM","Lockett, Johnny","jlockett@plummer.com","Lockett","Johnny","Director of Information Security and Technology","Information Technology Team","San Antonio",,"03","June","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/3/2024 1:30 PM",,,,,,,,"44",
+"45","TEST Ticket from JRL",,"Technical Support",,"1. New",,,"0","0","0",,,"6/3/2024 1:30 PM","Cissell,Kevin","1/22/2025 11:39 PM","Cissell,Kevin","kcissell@plummer.com","Cissell","Kevin","Technology Support Specialist",,"San Antonio",,"03","June","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/3/2024 1:30 PM",,,,,,,,"45",
+"46","test 1 - email to itsupport@plummer.com by jmartin on June 3 at 332PM CST",,"Technical Support",,"1. New",,,"0","0","0",,,"6/3/2024 1:36 PM","Martin, Josh","1/22/2025 11:39 PM","Martin, Josh","jmartin@plummer.com","Martin","Josh","IT Operations Manager","IT","Fort Worth",,"03","June","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/3/2024 1:36 PM",,,,,,,,"46",
+"47","TEST Ticket frm ",,"Technical Support",,"1. New",,,"0","0","0",,,"6/5/2024 11:11 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Contractor-BI Analyst/Developer",,"Remote",,"05","June","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/5/2024 11:11 AM",,,,,,,,"47",
+"48","Test ticket of User communication",,"Technical Support",,"1. New",,,"0","0","0",,,"6/5/2024 11:27 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Contractor-BI Analyst/Developer",,"Remote",,"05","June","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/5/2024 11:27 AM",,,,,,,,"48",
+"49","Test ticket2",,"Technical Support",,"1. New",,,"0","0","0",,,"6/5/2024 11:42 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Contractor-BI Analyst/Developer",,"Remote",,"05","June","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/6/2024 6:22 AM",,,,,,,,"49",
+"50","Laptop Monitor issue",,"Technical Support",,"9. Reopen",,,"0","0","0",,,"6/7/2024 10:31 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Contractor-BI Analyst/Developer",,"Remote",,"07","June","2024",,,"Dontamsetty, Vidyasagar",,,,"Mail","No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","9/12/2024 11:47 AM",,,,,,,,"50",
+"51","onboard test2","This is an onboarding request","HR Onboarding",,"2. In Progress",,,"0","0","0",,,"6/11/2024 4:09 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"11","June","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 4:49 AM",,,,,,,,"51",
+"52","KiranSLA Test","This ticket to test for SLA alert.","Technical Support",,"9. Reopen","zOthers - see Notes","No productivity loss","0","1","1",,,"6/11/2024 11:29 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"11","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","9/12/2024 11:42 AM",,,,,,,,"52","4 - Normal"
+"53","Test IT projects","this needs to be tested ","Project Support",,"1. New",,,"0","0","0",,,"6/12/2024 6:17 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"12","June","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 6:17 AM",,,,,,,,"53",
+"54","Kiran SLA test2","This ticket is to test SLA alert 2.","Technical Support",,"7. Closed - Unresolved","Security (Access, Malware, Privacy, etc)","No productivity loss","0","1","1",,,"6/12/2024 7:34 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"12","June","2024",,,"Lockett, Johnny",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","9/11/2024 12:23 PM",,,,,,,,"54","4 - Normal"
+"55","kiran SLA test3","This ticket is to test the SLA alert.","Technical Support",,"1. New","zOthers - see Notes","No productivity loss","0","1","1",,,"6/12/2024 8:01 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"12","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 8:03 AM",,,,,,,,"55","4 - Normal"
+"56","Kiran Ticket notes2","Ticket for ticket notes UAT.","Technical Support",,"1. New","zOthers - see Notes","No productivity loss","0","1","1",,,"6/12/2024 10:46 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"12","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 11:04 AM",,,,,,,,"56","4 - Normal"
+"57","Kirantest5","Kirantest5","Technical Support",,"1. New","zOthers - see Notes","Unable to work","0","4","4",,,"6/12/2024 11:25 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"12","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/12/2024 11:27 AM",,,,,,,,"57","1 - Critical"
+"58","Kirantest6","Kirantest6","Technical Support",,"1. New","zOthers - see Notes","Unable to work","0","4","4","Project Support","Project Support","6/12/2024 11:25 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"12","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,"/sites/plummerITMS/Lists/IT%20Project%20Tasks/DispForm.aspx?ID=374&e=rVGhYL",,"1/22/2025 11:39 PM","9/9/2024 12:33 PM",,,,,,,,"58","1 - Critical"
+"59","Kiran SLA Test","Kiran SLA Test","Technical Support",,"1. New","zOthers - see Notes","No productivity loss","0","1","1",,,"6/13/2024 5:33 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"13","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","9/9/2024 12:12 PM",,,,,,,,"59","4 - Normal"
+"60","SLA test vidya","SLA test for tech support","Technical Support",,"2. In Progress","Data (Sync, Backup, Restore, Transfer, etc)","No productivity loss","0","1","1",,,"6/13/2024 10:41 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"13","June","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/13/2024 12:03 PM",,,,,,,,"60","4 - Normal"
+"61","Onboarding request","This is an onboarding request","HR Onboarding",,"1. New",,,"0","0","0",,,"6/18/2024 2:44 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"18","June","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/18/2024 2:44 AM",,,,,,,,"61",
+"62","Onboarding request","This is an onboarding request","HR Onboarding",,"1. New",,,"0","0","0",,,"6/18/2024 10:07 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"18","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/18/2024 10:07 AM",,,,,,,,"62",
+"63","Onboarding request","This is an onboarding request","HR Onboarding",,"2. In Progress",,,"0","0","0",,,"6/19/2024 4:22 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"19","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/19/2024 4:27 AM",,,,,,,,"63",
+"64","Onboarding request","This is an onboarding request","HR Onboarding",,"2. In Progress",,,"0","0","0",,,"6/19/2024 5:36 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"19","June","2024",,,"Dontamsetty, Vidyasagar",,"No",,"Teams","No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/19/2024 5:41 AM",,,,,,,,"64",
+"65","CreatedByTest",,"Technical Support","TSS - User Support","9. Reopen","Software (Licensing, Errors, Install, Uninstall, Update, etc)","No productivity loss","0","1","1",,,"6/19/2024 7:37 AM","Kumar, Kiran","3/26/2025 5:32 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"19","June","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No","Dontamsetty, Vidyasagar","IT Messenger","Dontamsetty, Vidyasagar",,,,,"3/26/2025 5:32 AM","9/12/2024 11:31 AM",,,,,,,,"65","4 - Normal"
+"66","KiranTestCreatedFor","This ticket is for test.","Technical Support","TSS - User Support","1. New","zOthers - see Notes","No productivity loss","0","1","1",,,"6/19/2024 9:12 AM","Kumar, Kiran","3/26/2025 5:32 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"19","June","2024",,,"Unassigned",,"No",,,"Yes","KiranTest","IT Messenger","Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,"3/26/2025 5:32 AM","6/19/2024 9:12 AM","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"vdontamsetty9146@plummer.com","66","4 - Normal"
+"67","Vidyatest1","Test with Vidya","Technical Support","TSS - User Support","7. Closed - Unresolved","zOthers - see Notes","No productivity loss","0","1","1",,,"6/19/2024 9:55 AM","Kumar, Kiran","3/26/2025 5:32 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"19","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,"3/26/2025 5:32 AM","9/11/2024 2:49 AM","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"vdontamsetty9146@plummer.com","67","4 - Normal"
+"68","VidyaTicket","This ticket to test with Vidya on behalf","Technical Support","TSS - User Support","5. Closed - Cancelled","zOthers - see Notes","No productivity loss","0","1","1",,,"6/20/2024 6:32 AM","Kumar, Kiran","3/26/2025 5:32 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"20","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,"3/26/2025 5:32 AM","9/9/2024 11:54 AM","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"vdontamsetty9146@plummer.com","68","4 - Normal"
+"69","KiranTest for Kiran","test","Technical Support","TSS - User Support","2. In Progress","zOthers - see Notes","No productivity loss","0","1","1",,,"6/20/2024 10:00 AM","KiranTest","3/26/2025 5:32 AM","Kumar, Kiran","KiranTest@plummer.com","KiranTest",,,,,,"20","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"KiranTest","Dontamsetty, Vidyasagar","Kumar, Kiran",,,,"3/26/2025 5:32 AM","9/9/2024 10:42 AM","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"kkumar9127@plummer.com","69","4 - Normal"
+"70",,"Onboarding request for John, Kristin","HR Onboarding",,"1. New",,,"0","0","0",,,"6/26/2024 6:31 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"26","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/26/2024 9:52 AM",,,,,,,,"70",
+"71","Onboarding request","Onboarding request for KiranT, Kumar","HR Onboarding",,"1. New",,,"0","0","0",,,"6/26/2024 9:28 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"26","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/26/2024 10:35 AM",,,,,,,,"71",
+"72","Onboarding request","New Hire : Josh, Ashley","HR Onboarding",,"2. In Progress",,,"0","0","0",,,"6/26/2024 11:02 AM","Kumar, Kiran","1/22/2025 11:39 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"26","June","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/27/2024 10:39 AM",,,,,,,,"72",
+"73","KiranTest","Workflow notification test","Project Support",,"4. Closed - Resolved","zOthers - see Notes","No productivity loss","0","1","1",,,"6/27/2024 5:05 AM","Kumar, Kiran","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"27","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,"/sites/plummerITMS/Lists/IT%20Project%20Tasks/DispForm.aspx?ID=285&e=QsIpXF",,"1/22/2025 11:39 PM","8/19/2024 2:06 AM",,,,,,,,"73","4 - Normal"
+"74","CreatedforJohnny","Testing ticket","Project Support",,"1. New","Authentication (Login, Account, MFA, PW, etc)","No productivity loss","0","1","1",,,"6/27/2024 10:05 AM","Kumar, Kiran","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"27","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar","Lockett, Johnny",,"/sites/plummerITMS/Lists/IT%20Project%20Tasks/DispForm.aspx?ID=285&e=dFdWRM",,"1/22/2025 11:39 PM","8/19/2024 2:10 AM","Johnny","Lockett","Director of Information Security and Technology","Information Technology Team","San Antonio",,"jlockett@plummer.com","74","4 - Normal"
+"75","Onboarding request"," : New entry, Valid","HR Onboarding",,"1. New",,,"0","0","0",,,"6/28/2024 12:19 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"28","June","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/28/2024 12:19 AM",,,,,,,,"75",
+"76","Onboarding request","New Hire: Test, User2","HR Onboarding",,"1. New",,,"0","0","0",,,"6/28/2024 6:07 AM","Dontamsetty, Vidyasagar","1/22/2025 11:39 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"28","June","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:39 PM","6/28/2024 6:07 AM",,,,,,,,"76",
+"77","EMail Lists",,"Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"6/28/2024 7:15 AM","Gainous, Shelly","3/26/2025 5:33 AM","Gainous, Shelly","sgainous@plummer.com","Gainous","Shelly","Senior Administrative Assistant","Florida Team","Tampa",,"28","June","2024",,,"Unassigned",,,,"Mail","Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"3/26/2025 5:33 AM","6/28/2024 7:15 AM",,,,,,,,"77",
+"78","Onboarding request","New Intern: Test1, Kiran","HR Onboarding",,"1. New",,,"0","0","0",,,"6/28/2024 10:18 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"28","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","6/28/2024 10:18 AM",,,,,,,,"78",
+"79","Onboarding request","New Hire: Test1, Kiran2","HR Onboarding",,"1. New",,,"0","0","0",,,"6/28/2024 10:21 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"28","June","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","6/28/2024 10:21 AM",,,,,,,,"79",
+"80","Onboarding request",": test3, Kiran","HR Onboarding",,"2. In Progress",,,"0","0","0",,,"6/28/2024 10:29 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"28","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,"Yes",,,"1/22/2025 11:40 PM","7/5/2024 10:58 AM",,,,,,,,"80",
+"81","Onboarding request","New Intern: Jack, user","HR Onboarding",,"1. New",,,"0","0","0",,,"6/28/2024 11:03 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"28","June","2024",,,"Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,"Yes",,,"1/22/2025 11:40 PM","7/4/2024 7:43 AM",,,,,,,,"81",
+"82","Onboarding request","New Hire: Test, Kiran5","HR Onboarding",,"1. New",,,"0","0","0",,,"7/16/2024 7:00 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"16","July","2024",,,"Unassigned",,"No",,,"Yes",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","7/16/2024 7:00 AM",,,,,,,,"82",
+"83","Onboarding request","New Hire: Test, KiranTest7","HR Onboarding",,"1. New",,,"0","0","0",,,"7/16/2024 7:04 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"16","July","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","7/16/2024 7:09 AM",,,,,,,,"83",
+"84","Onboarding request","FT Transition: Testt, Kirantest57","HR Onboarding",,"1. New",,,"0","0","0",,,"7/22/2024 10:04 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"22","July","2024",,,"Kumar, Kiran",,"No",,,"No",,"IT Messenger","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","7/30/2024 12:57 PM",,,,,,,,"84",
+"85","Onboarding request","New Intern: Test, User40","HR Onboarding",,"4. Closed - Resolved",,,"0","0","0",,,"7/24/2024 4:23 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"24","July","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","7/24/2024 11:15 AM",,,,,,,,"85",
+"86","Onboarding request","New Intern: Test, User45","HR Onboarding",,"2. In Progress",,,"0","0","0",,,"7/24/2024 10:36 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"24","July","2024",,,"Cissell,Kevin",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","7/24/2024 10:41 AM",,,,,,,,"86",
+"87","Install Power BI desktop","Please install software request to my machin.
+Machine ID; kiran5656","Technical Support",,"6. Closed - No Response",,,"0","0","0",,,"9/3/2024 6:57 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"03","September","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","9/11/2024 12:01 PM",,,,,,,,"87",
+"88","Install Power Bi dReport builder","Please install report builder version 20.08 in my machine the ID: ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"9/3/2024 7:19 AM","Kumar, Kiran","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"03","September","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,"Yes","1/22/2025 11:40 PM","10/17/2024 8:02 AM",,,,,,,,"88",
+"89","Onboarding request","Offboarding Request","HR Offboarding",,"3. Pending",,,"0","0","0",,,"9/9/2024 8:43 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"09","September","2024",,,"Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,"Yes","1/22/2025 11:40 PM","9/16/2024 4:50 AM",,,,,,,,"89",
+"90","Onboarding request","Offboarding Request","HR Offboarding",,"3. Pending",,,"0","0","0",,,"9/12/2024 7:12 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"12","September","2024",,,"Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,"Yes","1/22/2025 11:40 PM","9/22/2024 2:02 PM",,,,,,,,"90",
+"91","Offboarding request","Offboarding Request","HR Offboarding",,"2. In Progress",,,"0","0","0",,,"9/20/2024 5:07 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"20","September","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,"Yes","1/22/2025 11:40 PM","9/24/2024 5:34 AM",,,,,,,,"91",
+"92","Offboarding request","Offboarding Request","HR Offboarding",,"4. Closed - Resolved",,,"0","0","0",,,"9/22/2024 2:32 PM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"22","September","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","9/22/2024 2:44 PM",,,,,,,,"92",
+"93","Offboarding request","Offboarding Request","HR Offboarding",,"1. New",,,"0","0","0",,,"9/24/2024 11:57 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"24","September","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","9/24/2024 11:57 AM",,,,,,,,"93",
+"94","Offboarding request","Offboarding Request","HR Offboarding",,"1. New",,,"0","0","0",,,"9/24/2024 12:01 PM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"24","September","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","9/24/2024 12:01 PM",,,,,,,,"94",
+"95","Offboarding request","Offboarding Request","HR Offboarding",,"1. New",,,"0","0","0",,,"9/24/2024 12:03 PM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"24","September","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","9/24/2024 12:03 PM",,,,,,,,"95",
+"96","Test_TranscationTable","Testing for Transition metric table flows.","Technical Support","SEC - General","1. New","zOthers - see Notes","No productivity loss","0","1","1",,,"9/26/2024 10:37 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"26","September","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","9/26/2024 11:20 AM",,,,,,,,"96","4 - Normal"
+"97","Test of Subticket type","For Transaction metric table.","Technical Support","SEC - General","4. Closed - Resolved","zOthers - see Notes","No productivity loss","0","1","1",,,"9/26/2024 11:23 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"26","September","2024",,,"Seher, Steve",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","12/2/2024 5:42 AM",,,,,,,,"97","4 - Normal"
+"98","Test_SR_2","Transaction table test.","Technical Support","SEC - General","4. Closed - Resolved","Software (Licensing, Errors, Install, Uninstall, Update, etc)","No productivity loss","0","1","1",,,"9/27/2024 7:57 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"27","September","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","12/2/2024 4:28 AM",,,,,,,,"98","4 - Normal"
+"99","Test DS Support","Testing DS Support","Technical Support","DS - Support","4. Closed - Resolved","General (Questions, Info Sharing, How To, etc)","No productivity loss","0","1","1",,,"10/1/2024 5:38 AM","Kumar, Kiran","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"01","October","2024",,,"Kumar, Kiran",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","12/2/2024 4:19 AM",,,,,,,,"99","4 - Normal"
+"102","Test Ticket to check SEC SR","Form has to submit a new record in SP list","Technical Support","SEC - General","2. In Progress","Software (Licensing, Errors, Install, Uninstall, Update, etc)","No productivity loss","0","1","1",,,"10/22/2024 5:37 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Kumar, Kiran","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"22","October","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"102","4 - Normal"
+"103","Test tciket for Software Review",,"Technical Support","SEC - Software Review","2. In Progress","Audio/Video (Conf Rooms, Peripheral, etc)","No productivity loss","0","1","1",,,"10/22/2024 7:17 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"22","October","2024",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"103","4 - Normal"
+"104","Test ticket for SR testing","description to test","Technical Support","SEC - Software Review","2. In Progress",,,"0","0","0",,,"10/24/2024 8:54 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"24","October","2024",,,"Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"104",
+"105","Install  Citrix app","Install  Citrix application","Technical Support","SEC - Software Review","2. In Progress",,,"0","0","0",,,"10/24/2024 9:02 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Kumar, Kiran","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"24","October","2024",,,"Le, Kevin",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"105",
+"106","Testing transaction metrics","Testing transaction metrics","Technical Support","SEC - General","4. Closed - Resolved","Data (Sync, Backup, Restore, Transfer, etc)",,"0","0","0",,,"10/25/2024 6:03 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Kumar, Kiran","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"25","October","2024","DataSol",,"Le, Kevin",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM","10/25/2024 6:23 AM",,,,,,,,"106",
+"107","Test_Sec-general","Testing of Sec-general demo","Technical Support","SEC - General","2. In Progress","Data (Sync, Backup, Restore, Transfer, etc)","No productivity loss","0","1","1",,,"10/29/2024 8:37 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"29","October","2024","DataSol","SAT","Le, Kevin",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"107","4 - Normal"
+"108","Test add rec","to check addition of record in SP","Technical Support","SEC - Software Review","1. New",,,"0","0","0",,,"10/30/2024 4:45 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"30","October","2024",,,"Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"108",
+"109","Ticket test","testing of SR","Technical Support","SEC - General","2. In Progress","Security (Access, Malware, Privacy, etc)","No productivity loss","0","1","1",,,"11/6/2024 9:30 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"06","November","2024","SecOps","SAT","Le, Kevin",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"109","4 - Normal"
+"110","Testing Kiran","Testing Ticket","Purchase Support",,"1. New",,,"0","0","0",,,"11/12/2024 4:24 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"12","November","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar","Kumar, Kiran",,,,"1/22/2025 11:40 PM",,"Kiran","Kumar",,,,,"kkumar9127@plummer.com","110",
+"112","Test IT Project V2","Test IT Project V2","Technical Support","IT - Project Support V2","1. New","Data (Sync, Backup, Restore, Transfer, etc)","No productivity loss","0","1","1",,,"11/20/2024 6:05 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"20","November","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"112","4 - Normal"
+"113","Test Purchase ticket",,"Technical Purchase",,"1. New",,,"0","0","0",,,"12/3/2024 10:33 PM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"03","December","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"113",
+"114","Test purchase ticket2",,"Technical Purchase",,"1. New",,,"0","0","0",,,"12/5/2024 5:44 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"05","December","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"114",
+"115","Test Purchase Ticket",,"Technical Purchase",,"4. Closed - Resolved",,,"0","0","0",,,"12/5/2024 9:03 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"05","December","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"115",
+"117","Test3 Techincal purchase",,"Technical Purchase",,"1. New",,,"0","0","0",,,"12/12/2024 3:42 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"12","December","2024",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"117",
+"118","Test 1",,"Technical Purchase",,"1. New",,"Significant loss of productivity","0","3","3",,,"12/12/2024 7:32 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"12","December","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"118","2 - Urgent"
+"123","Test 2 Techincal Purchase ","Purchase Request","Technical Purchase",,"2. In Progress",,"No productivity loss","0","1","1",,,"12/26/2024 4:16 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"26","December","2024",,"FTW","Kumar, Kiran",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"123","4 - Normal"
+"124","kiran_purtestticket","Purchase Request","Technical Purchase",,"2. In Progress",,"Significant loss of productivity","0","3","3",,,"12/26/2024 6:29 AM","Kumar, Kiran","1/22/2025 11:40 PM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"26","December","2024",,"SAT","Kumar, Kiran",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"124","2 - Urgent"
+"125","Test3 Techincal Purchase","Purchase Request","Technical Purchase",,"1. New",,"Significant loss of productivity","0","3","3",,,"12/26/2024 7:08 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Kumar, Kiran","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"26","December","2024",,"FTW","Chacon, Dyane",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"125","2 - Urgent"
+"126","Project ticket type","Technical Project Request","Technical Project",,"4. Closed - Resolved",,,"0","0","0",,,"12/26/2024 7:56 AM","Kumar, Kiran","4/23/2025 8:42 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"26","December","2024",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","Kumar, Kiran",,,,,"4/23/2025 8:42 AM",,,,,,,,,"126",
+"127","KiranTest_purnew","Purchase Request","Technical Purchase",,"2. In Progress",,"No productivity loss","0","1","1",,,"12/28/2024 11:16 PM","Kumar, Kiran","1/29/2025 2:31 AM","Dontamsetty, Vidyasagar","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"28","December","2024",,,"Martin, Josh",,"No",,,"No",,"Kumar, Kiran","Dontamsetty, Vidyasagar",,,,,"1/29/2025 2:31 AM",,,,,,,,,"127","4 - Normal"
+"128","Test4 Techincal Purchase","Purchase Request","Technical Purchase",,"1. New",,"No productivity loss","0","1","1",,,"12/30/2024 9:02 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Kumar, Kiran","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"30","December","2024",,,"Lockett, Johnny",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"128","4 - Normal"
+"129","Test5 Techincal purchase","Purchase Request","Technical Purchase",,"2. In Progress",,"No productivity loss","0","1","1",,,"12/30/2024 9:12 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Kumar, Kiran","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"30","December","2024",,,"Chacon, Dyane",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"1/22/2025 11:40 PM",,,,,,,,,"129","4 - Normal"
+"130","Test ticket 6","Purchase Request","Technical Purchase",,"2. In Progress",,"No productivity loss","0","1","1",,,"1/19/2025 9:13 AM","Dontamsetty, Vidyasagar","1/22/2025 11:40 PM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"19","January","2025",,"AUS","Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar","Kumar, Kiran",,,,"1/22/2025 11:40 PM",,"Kiran","Kumar",,,,,"kkumar9127@plummer.com","130","4 - Normal"
+"131","Test_Index","This ticket is to test the index column.","Technical Support",,"4. Closed - Resolved","General (Questions, Info Sharing, How To, etc)","Unable to work","0","4","4",,,"1/23/2025 4:37 AM","Kumar, Kiran","4/21/2025 2:29 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"23","January","2025",,,"Unassigned",,"No",,,"Yes",,"Kumar, Kiran","IT Messenger",,,,,"4/21/2025 2:29 AM","4/21/2025 2:27 AM",,,,,,,,"131","1 - Critical"
+"132","Purchase test_13/02","Purchase Request","Technical Purchase",,"2. In Progress",,"No productivity loss","0","1","1",,,"2/13/2025 7:41 AM","Kumar, Kiran","2/13/2025 7:43 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Contractor-BI Analyst/Developer",,"Remote",,"13","February","2025",,"SAT","Kumar, Kiran",,"No",,,"No",,"Kumar, Kiran","Kumar, Kiran","Dontamsetty, Vidyasagar",,,,"2/13/2025 7:43 AM",,"Vidyasagar","Dontamsetty",,,,,"vdontamsetty9146@plummer.com",,"4 - Normal"
+"133","Test Purchase reucrring","Purchase Request","Technical Purchase",,"7. Closed - Unresolved",,"No productivity loss","0","1","1",,,"2/25/2025 3:47 AM","Dontamsetty, Vidyasagar","4/10/2025 6:26 AM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Contractor-BI Analyst/Developer",,"Remote",,"25","February","2025",,,"Unassigned",,"No",,,"Yes",,"Dontamsetty, Vidyasagar","Kumar, Kiran",,,,,"4/10/2025 6:26 AM",,,,,,,,,,"4 - Normal"
+"134","PBI_Test","This ticket is to test PBI TimeZone.","Technical Support",,"1. New","Data (Sync, Backup, Restore, Transfer, etc)","No productivity loss","0","1","1",,,"3/3/2025 7:06 AM","Kumar, Kiran","3/3/2025 7:06 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Sr. Power Platform Developer - Contractor",,"Remote",,"03","March","2025",,,"Unassigned",,"No",,,"No",,"Kumar, Kiran","Kumar, Kiran",,,,,"3/3/2025 7:06 AM",,,,,,,,,,"4 - Normal"
+"135","Test Keyboard is not working","to test survey form v2 ","Technical Support",,"4. Closed - Resolved","Hardware (Computer, Smart Device, Peripheral, etc)","No productivity loss","0","1","1",,,"4/28/2025 5:59 AM","Dontamsetty, Vidyasagar","4/28/2025 6:08 AM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Sr. Power Platform Developer - Contractor",,"Remote",,"28","April","2025",,,"Unassigned",,"No",,,"No",,"Dontamsetty, Vidyasagar","IT Messenger",,,,,"4/28/2025 6:08 AM","4/28/2025 6:08 AM",,,,,,,,,"4 - Normal"
+"136","SurevyForm_Test2","This ticket is to for Created For survey flow changes.","Technical Support",,"4. Closed - Resolved","Data (Sync, Backup, Restore, Transfer, etc)","No productivity loss","0","1","1",,,"5/1/2025 9:18 AM","Kumar, Kiran","5/1/2025 10:55 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Sr. Power Platform Developer - Contractor",,"Remote",,"01","May","2025",,,"Kumar, Kiran",,"No",,,"No",,"Kumar, Kiran","Kumar, Kiran","Shanthi Korlepara",,,,"5/1/2025 10:55 AM","5/1/2025 9:20 AM","Shanthi","Korlepara",,,,,"skorlepara9168@plummer.com",,"4 - Normal"
+"137","SurveyForm_test3","Test ticket","Technical Support",,"4. Closed - Resolved","Data (Sync, Backup, Restore, Transfer, etc)","No productivity loss","0","1","1",,,"5/1/2025 10:58 AM","Kumar, Kiran","5/1/2025 11:04 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Sr. Power Platform Developer - Contractor",,"Remote",,"01","May","2025",,,"Kumar, Kiran",,"No",,,"No",,"Kumar, Kiran","IT Messenger","Shanthi Korlepara",,,,"5/1/2025 11:04 AM","5/1/2025 11:02 AM",,,,,,,,,"4 - Normal"
+"138","Survey Form v3","Testing form v3","Technical Support",,"4. Closed - Resolved","Data (Sync, Backup, Restore, Transfer, etc)","No productivity loss","0","1","1",,,"5/1/2025 11:05 AM",,"5/1/2025 11:06 AM",,,,,,,,,"01","May","2025",,,,,,,,"No",,"Kumar, Kiran","Kumar, Kiran",,,,,"5/1/2025 11:06 AM",,"Shanthi","Korlepara",,,,,"skorlepara9168@plummer.com",,"4 - Normal"
+"139","New SurveyForm","EMAIL: Hi Team, 
+
+
+I am facing an issue with my hard drive. Could you please resolve it ASAP.
+
+
+
+ 
+
+ [cid:6c49d884-0184-4d51-a90a-c6c8110e26e1]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","2. In Progress",,,"0","0","0",,,"5/7/2025 3:56 AM","Kumar, Kiran","6/11/2025 7:04 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"07","May","2025",,,"Kumar, Kiran",,,,"Mail","No",,"IT Messenger","Kumar, Kiran",,"No",,,"6/11/2025 7:04 AM",,,,,,,,,,
+"140","Test ticket for flow testing","Test ticket for flow testing","Technical Support",,"3. Pending",,,"0","0","0",,,"5/8/2025 9:26 AM","Dontamsetty, Vidyasagar","5/8/2025 9:49 AM","Dontamsetty, Vidyasagar","vdontamsetty9146@plummer.com","Vidyasagar","Dontamsetty","Sr. Power Platform Developer - Contractor",,"Remote",,"08","May","2025",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Dontamsetty, Vidyasagar","Dontamsetty, Vidyasagar",,,,,"5/8/2025 9:49 AM",,,,,,,,,,
+"141","Automatic reply: Tech Support Survey","Hello,
+
+This email is no longer in service. Please contact Plummer at 817-806-1700 for
+any questions.","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"5/16/2025 4:25 PM","Chilton, Luke","5/16/2025 4:25 PM","Chilton, Luke","Lchilton@plummer.com","Chilton","Luke","Chief Financial Officer","Finance","Fort Worth",,"16","May","2025",,,"Unassigned",,,,"Mail","No",,"IT Messenger","IT Messenger",,"No",,,"5/16/2025 4:25 PM",,,,,,,,,,
+"142","Automatic reply: Tech Support Survey","I am currently out of the office, for IT issues please submit a ticket here:
+https://teams.microsoft.com/l/message/19:466d6f6ae93c428aa0df7625da479250@thread.skype/1710975007136?tenantId=da2f0fe6-adff-4f18-a87c-96fcb04a4dfa&groupId=ec8422a5-124f-49bd-88de-20f18d3a5bab&par","Technical Support","TSS - User Support","2. In Progress",,,"0","0","0",,,"5/23/2025 3:14 PM","Adedokun, David","6/11/2025 7:08 AM","Kumar, Kiran","dadedokun@plummer.com","Adedokun","David","Technology Support Specialist","Information Technology","Fort Worth",,"23","May","2025",,,"Kumar, Kiran",,,,"Mail","No",,"IT Messenger","Kumar, Kiran",,"No",,,"6/11/2025 7:08 AM",,,,,,,,,,
+"143","Workflowtesting","This the request for to test the workflow notifications.","Technical Support",,"1. New","General (Questions, Info Sharing, How To, etc)","Unable to work","0","4","4",,,"5/27/2025 4:46 AM","Kumar, Kiran","6/10/2025 4:05 AM","Kumar, Kiran","kkumar9127@plummer.com","Kiran","Kumar","Sr. Power Platform Developer - Contractor",,"Remote",,"27","May","2025",,,"Dontamsetty, Vidyasagar",,"No",,,"No",,"Kumar, Kiran","Kumar, Kiran",,,,,"6/10/2025 4:05 AM",,,,,,,,,,"1 - Critical"
+"144","Automatic reply: Tech Support Survey","Hello,
+
+I am in the field May 29th & 30th  so please expect a delayed response from me.
+Please call me on my cell phone or for immediate assistance please contact
+Nathan Saxe nsaxe@plummer.com or Landon Kapavik lkapavik@plummer.com
+
+
+
+
+
+Thanks!
+
+214-405-4664  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"5/28/2025 2:59 PM","Metzler, Karen","5/28/2025 2:59 PM","Metzler, Karen","kmetzler@plummer.com","Metzler","Karen","Environmental Specialist",,"Fort Worth",,"28","May","2025",,,"Unassigned",,,,"Mail","No",,"IT Messenger","IT Messenger",,"No",,,"5/28/2025 2:59 PM",,,,,,,,,,
+"145","Automatic reply: Tech Support Survey","This email is no longer in service, please contact Patrick OBrien for any
+questions or concerns.","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"6/2/2025 9:28 AM","Toussaint, Nick","6/2/2025 9:28 AM","Toussaint, Nick","ntoussaint@plummer.com","Toussaint, PE, PMP","Nick","Principal I",,"Denver",,"02","June","2025",,,"Unassigned",,,,"Mail","No",,"IT Messenger","IT Messenger",,"No",,,"6/2/2025 9:28 AM",,,,,,,,,,
+"146","Automatic reply: Tech Support Survey","This email is no longer in service, please contact, Mike Kennedy
+(mkennedy@plummer.com) for any additional questions.","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"6/4/2025 8:53 AM","Ben Talley","6/4/2025 8:53 AM","Ben Talley","btalley@plummer.com","Talley","Ben","Construction Manager III","STX Construction","Houston",,"04","June","2025",,,"Unassigned",,,,"Mail","No",,"IT Messenger","IT Messenger",,"No",,,"6/4/2025 8:53 AM",,,,,,,,,,
+"147","Automatic reply: Tech Support Survey","
+
+I am out of the office at a conference and will return on Wednesday, June 11.
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"6/9/2025 8:48 AM","Leppla, Hannah","6/9/2025 8:48 AM","Leppla, Hannah","hleppla@plummer.com","Leppla","Hannah","Project Manager I",,"Austin",,"09","June","2025",,,"Unassigned",,,,"Mail","No",,"IT Messenger","IT Messenger",,"No",,,"6/9/2025 8:48 AM",,,,,,,,,,
+"148","System login issue","Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/7/2025 11:53 AM","Kumar, Kiran","7/7/2025 11:53 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"07","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/7/2025 11:53 AM",,,,,,,,,,
+"149","System login issue","Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/8/2025 2:31 AM","Kumar, Kiran","7/8/2025 2:31 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"08","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/8/2025 2:31 AM",,,,,,,,,,
+"150","System login issue","Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/8/2025 2:36 AM","Kumar, Kiran","7/8/2025 2:36 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"08","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/8/2025 2:36 AM",,,,,,,,,,
+"151","System login issue","Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/8/2025 7:04 AM","Kumar, Kiran","7/8/2025 7:04 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"08","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/8/2025 7:04 AM",,,,,,,,,,
+"152","System login issue","Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/8/2025 7:07 AM","Kumar, Kiran","7/8/2025 7:07 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"08","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/8/2025 7:07 AM",,,,,,,,,,
+"153","Test_SystemIssue","
+
+Mail system production test ticket. 
+
+
+
+
+
+ 
+
+ [cid:b7569b72-a603-4614-9dba-03c9dac5c470]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/11/2025 6:48 AM","Kumar, Kiran","7/14/2025 8:32 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"11","July","2025",,,"Unassigned",,,,"Mail","Yes",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/14/2025 8:32 AM",,,,,,,,,"153",
+"155","System issue login","Hi team, 
+
+
+I have an issue with the system. 
+
+
+
+
+
+ 
+
+ [cid:20491f81-a618-4ea9-a479-b0645ffcddc4]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/14/2025 8:58 AM","Kumar, Kiran","7/14/2025 8:59 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"14","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/14/2025 8:59 AM",,,,,,,,,"154",
+"156","System login issues","Hi team, 
+
+
+I have an issue with the system. 
+
+
+
+
+
+
+
+ 
+
+ [cid:c2da00d2-a746-490f-bf71-fa45726ef10c]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/14/2025 9:04 AM","Kumar, Kiran","7/14/2025 9:04 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"14","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/14/2025 9:04 AM",,,,,,,,,,
+"157","PLEASE HELP!","I do not need help, I am just testing the helpdesk email system.
+
+
+Thanks,
+
+
+
+
+ 
+
+A logo of a tree and a river Description automatically generated
+[cid:2ca7dbc6-0062-4fc0-bccc-ccbf6c6467f9] [http://www.plummer.com/]
+
+Jon Paul Chatha
+Technology Support Specialist
+
+14755 Preston Rd.
+Suite 420
+Dallas, TX 75254
+D: 972.996.5674
+
+jchatha9161@plummer.com
+www.plummer.com [http://www.plummer.com/]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+[cid:962c3367-dce1-4266-8945-75deed306560]  Please consider the environment
+before printing this e-mail.","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/14/2025 9:09 AM","Jon Chatha","7/14/2025 9:09 AM","Jon Chatha","jchatha9161@plummer.com","Chatha","Jon","Technology Support Specialist - Contractor","IT","Dallas",,"14","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/14/2025 9:09 AM",,,,,,,,,,
+"158","System login issues","Hi team, 
+
+
+I have an issue with the system. 
+
+
+
+
+
+
+
+ 
+
+ [cid:c2da00d2-a746-490f-bf71-fa45726ef10c]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/14/2025 9:20 AM","Kumar, Kiran","7/14/2025 9:20 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"14","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/14/2025 9:20 AM",,,,,,,,,,
+"159","PLEASE HELP!","I do not need help, I am just testing the helpdesk email system.
+
+
+Thanks,
+
+
+
+
+ 
+
+A logo of a tree and a river Description automatically generated
+[cid:2ca7dbc6-0062-4fc0-bccc-ccbf6c6467f9] [http://www.plummer.com/]
+
+Jon Paul Chatha
+Technology Support Specialist
+
+14755 Preston Rd.
+Suite 420
+Dallas, TX 75254
+D: 972.996.5674
+
+jchatha9161@plummer.com
+www.plummer.com [http://www.plummer.com/]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+[cid:962c3367-dce1-4266-8945-75deed306560]  Please consider the environment
+before printing this e-mail.","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/15/2025 3:11 AM","Jon Chatha","7/15/2025 3:11 AM","Jon Chatha","jchatha9161@plummer.com","Chatha","Jon","Technology Support Specialist - Contractor","IT","Dallas",,"15","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/15/2025 3:11 AM",,,,,,,,,,
+"160","Unable to login Microsoft account","Hi Team, 
+
+
+I am unable to log in Microsoft account. Please help me out on this. 
+
+
+
+
+
+ 
+
+ [cid:3790c69e-3703-46a1-a333-67aa085f9b6d]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ","Technical Support","TSS - User Support","1. New",,,"0","0","0",,,"7/15/2025 3:16 AM","Kumar, Kiran","7/15/2025 3:16 AM","Kumar, Kiran","kkumar9127@plummer.com","Kumar","Kiran","Sr. Power Platform Developer - Contractor",,"Remote",,"15","July","2025",,,"Unassigned",,,,"Mail","No",,"Kumar, Kiran","Kumar, Kiran",,"No",,,"7/15/2025 3:16 AM",,,,,,,,,,
+"161","System not working","Raise a ticket as my system is not working","Technical Support","Software","1. New","Account","Blocking","0","0","0",,,"7/16/2025 7:35 PM",,"7/16/2025 7:35 PM",,,,,,,,,"16","July","2025",,,,,,,,"No",,"Vijay Kumar","Vijay Kumar",,,,,"7/16/2025 7:35 PM",,,,,,,,,,
+"162","test ticket","raise a ticket for system not working","Technical Support","Software","1. New","Access","Blocking","0","0","0",,,"7/16/2025 7:58 PM",,"7/16/2025 7:58 PM",,,,,,,,,"16","July","2025",,,,,,,,"No",,"Vijay Kumar","Vijay Kumar",,,,,"7/16/2025 7:58 PM",,,,,,,,,,
+"163","Device not turning on","It is not turning on.. Can you raise a ticket","Technical Support","Software","1. New","Access","Blocking","0","0","0",,,"7/17/2025 4:37 PM",,"7/17/2025 4:37 PM",,,,,,,,,"17","July","2025",,,,,,,,"No",,"Vijay Kumar","Vijay Kumar",,,,,"7/17/2025 4:37 PM",,,,,,,,,,

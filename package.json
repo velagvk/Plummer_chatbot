@@ -1,0 +1,37 @@
+{
+  "name": "teams-openai-chatbot",
+  "version": "1.0.0",
+  "description": "Microsoft Teams chatbot with Azure OpenAI backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "setup": "./scripts/setup.sh"
+  },
+  "dependencies": {
+    "@azure/openai": "^1.0.0-beta.8",
+    "@microsoft/teams-js": "^2.24.0",
+    "axios": "^1.10.0",
+    "botbuilder": "^4.21.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "restify": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/restify": "^2.0.4",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "teams",
+    "chatbot",
+    "azure-openai",
+    "bot-framework"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
