@@ -1,261 +1,429 @@
-# Microsoft Teams Chatbot with Azure OpenAI
+# Microsoft Teams Chatbot with Azure OpenAI & Analytics
 
-A Microsoft Teams chatbot powered by Azure OpenAI that provides intelligent conversations and assistance in a professional workplace environment.
+A Microsoft Teams chatbot powered by Azure OpenAI that provides intelligent conversations, ticket analytics, and IT support assistance in a professional workplace environment.
 
-## Features
+## 🌟 Features
 
+### Core Bot Features
 - 🤖 **AI-Powered Conversations**: Powered by Azure OpenAI for natural language understanding
 - 💬 **Context-Aware Responses**: Maintains conversation history for better context
 - 🏢 **Teams Integration**: Seamlessly integrates with Microsoft Teams channels
 - 📱 **Adaptive Cards**: Rich interactive messages with cards and buttons
 - 🔧 **Command System**: Built-in commands for help and conversation management
-- 🛡️ **Professional Environment**: Designed for workplace use with appropriate responses
 
-## Prerequisites
+### Advanced Agent Features
+- 🎯 **Support Agent**: IT support assistance with technical troubleshooting
+- 📚 **Knowledge Retrieval Agent**: Search internal documents (coming soon)
+- 📊 **Data Insights Agent**: Comprehensive ticket analytics and insights
+- 🎫 **Smart Ticket Creation**: AI-powered ticket form generation
+- 📈 **Ticket Status Inquiry**: Real-time ticket status checking
+- 🤔 **Thinking Messages**: Progressive feedback during processing
 
-Before you begin, ensure you have the following:
+### Analytics Capabilities
+- 📊 **Ticket Analytics**: Advanced analytics on IT tickets with role-based access
+- 🔍 **Intelligent Query Processing**: Natural language queries for data insights
+- 👥 **Role-Based Access**: Different data access levels for IT Admin, Leadership, and Normal Users
+- 📈 **Real-time Data**: Live ticket status and analytics from Power Automate integration
 
-### Azure OpenAI Setup
-1. **Azure OpenAI Service**: Create an Azure OpenAI resource in your Azure subscription
-2. **Model Deployment**: Deploy a GPT model (e.g., GPT-3.5-turbo or GPT-4) in your Azure OpenAI service
-3. **API Keys**: Get your Azure OpenAI endpoint and API key
+## 📋 Prerequisites
 
-### Microsoft Teams Setup
-1. **Bot Registration**: Register your bot in the Azure Bot Service
-2. **Teams App**: Create a Teams app in the Teams Developer Portal
-3. **Azure AD App**: Register an Azure AD application for authentication
-
-### Development Environment
+### For Teams Bot (Node.js)
 - Node.js (v16 or higher)
 - npm or yarn
-- Visual Studio Code (recommended)
+- TypeScript
 - Bot Framework Emulator (for local testing)
 
-## Installation
+### For Analytics Service (Python)
+- Python 3.8 or higher
+- pip (Python package manager)
+- Virtual environment (recommended)
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd teams-openai-chatbot
-   ```
+### Azure Services
+1. **Azure OpenAI Service**: Create an Azure OpenAI resource
+2. **Model Deployment**: Deploy a GPT model (e.g., GPT-4)
+3. **Bot Registration**: Register your bot in Azure Bot Service
+4. **Teams App**: Create a Teams app in Teams Developer Portal
+5. **Power Automate**: Flows for ticket creation and retrieval
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+## 🚀 Installation & Setup
 
-3. **Configure environment variables**
-   ```bash
-   cp env.example .env
-   ```
-   
-   Edit `.env` with your configuration:
-   ```env
-   # Azure OpenAI Configuration
-   AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
-   AZURE_OPENAI_API_KEY=your-azure-openai-api-key
-   AZURE_OPENAI_DEPLOYMENT_NAME=your-deployment-name
+### 1. Clone the Repository
+```bash
+git clone https://github.com/velagvk/Plummer_chatbot.git
+cd Plummer_chatbot
+```
 
-   # Bot Framework Configuration
-   MICROSOFT_APP_ID=your-bot-app-id
-   MICROSOFT_APP_PASSWORD=your-bot-app-password
-   MICROSOFT_APP_TENANT_ID=your-tenant-id
+### 2. Setup Teams Bot (Node.js)
 
-   # Teams Configuration
-   TEAMS_APP_ID=your-teams-app-id
-   TEAMS_APP_PASSWORD=your-teams-app-password
+#### Install Dependencies
+```bash
+npm install
+```
 
-   # Server Configuration
-   PORT=3978
-   NODE_ENV=development
-   ```
+#### Configure Environment Variables
+```bash
+cp env.example .env
+```
 
-## Development
+Edit `.env` with your configuration:
+```env
+# Azure OpenAI Configuration
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
+AZURE_OPENAI_API_KEY=your-azure-openai-api-key
+AZURE_OPENAI_DEPLOYMENT_NAME=your-deployment-name
 
-### Local Development
+# Bot Framework Configuration
+BOT_ID=your-bot-app-id
+BOT_PASSWORD=your-bot-app-password
+BOT_TENANT_ID=your-tenant-id
 
-1. **Start the development server**
-   ```bash
-   npm run dev
-   ```
+# Teams Configuration
+TEAMS_APP_ID=your-teams-app-id
+TEAMS_APP_PASSWORD=your-teams-app-password
 
-2. **Test with Bot Framework Emulator**
-   - Download and install [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator)
-   - Open the emulator and connect to `http://localhost:3978/api/messages`
-   - Start chatting with your bot
+# Server Configuration
+PORT=3978
+NODE_ENV=development
+```
 
-### Building for Production
+### 3. Setup Analytics Service (Python)
 
-1. **Build the TypeScript code**
-   ```bash
-   npm run build
-   ```
+#### Create Virtual Environment
+```bash
+# Create virtual environment
+python3 -m venv .venv
 
-2. **Start the production server**
-   ```bash
-   npm start
-   ```
+# Activate virtual environment
+# On macOS/Linux:
+source .venv/bin/activate
+# On Windows:
+.venv\Scripts\activate
+```
 
-## Deployment
+#### Install Python Dependencies
+```bash
+pip install flask pandas requests python-dotenv azure-openai
+```
 
-### Option 1: Azure Bot Service (Recommended)
+#### Configure Analytics Service
+The analytics service reads from the same `.env` file and requires:
+- Azure OpenAI configuration
+- Access to your Power Automate flows for ticket data
+- IT-Tickets.csv file for ticket analytics
 
-1. **Deploy to Azure**
-   ```bash
-   # Using Azure CLI
-   az webapp up --name your-bot-name --resource-group your-resource-group --runtime "NODE|18-lts"
-   ```
+## 🔧 Running the Application
 
-2. **Configure environment variables in Azure**
-   - Go to your Azure Web App
-   - Navigate to Configuration > Application settings
-   - Add all environment variables from your `.env` file
+### Option 1: Run Both Services Separately
 
-3. **Update bot messaging endpoint**
-   - In Azure Bot Service, update the messaging endpoint to: `https://your-app-name.azurewebsites.net/api/messages`
+#### Terminal 1: Start the Analytics Service (Python)
+```bash
+# Activate virtual environment
+source .venv/bin/activate  # macOS/Linux
+# .venv\Scripts\activate   # Windows
 
-### Option 2: Docker Deployment
+# Start the Python Flask analytics service
+python analytics_service.py
 
-1. **Build Docker image**
-   ```bash
-   docker build -t teams-openai-bot .
-   ```
+# You should see output like:
+# * Running on http://127.0.0.1:5001
+# * Debug mode: off
+# * Press CTRL+C to quit
+```
 
-2. **Run container**
-   ```bash
-   docker run -p 3978:3978 --env-file .env teams-openai-bot
-   ```
+**The analytics service will run on `http://localhost:5001`**
 
-## Teams App Deployment
+**Key endpoints:**
+- `POST /analyze` - Process analytics queries
+- `GET /health` - Health check endpoint
 
-### 1. Update Manifest
+#### Terminal 2: Start the Teams Bot (Node.js)
+```bash
+# Build TypeScript
+npm run build
 
-1. Edit `teams-app-manifest/manifest.json`
-2. Replace placeholders:
-   - `{{TEAMS_APP_ID}}` with your Teams app ID
-   - `{{BOT_DOMAIN}}` with your bot's domain
+# Start the bot server
+npm start
 
-### 2. Create App Package
+# You should see output like:
+# restify listening to http://[::]:3978
+# Get Bot Framework Emulator: https://aka.ms/botframework-emulator
+```
 
-1. **Add icons** to the `teams-app-manifest/` directory:
-   - `color.png` (192x192px)
-   - `outline.png` (32x32px)
+**The bot will run on `http://localhost:3978`**
 
-2. **Zip the manifest folder**:
-   ```bash
-   cd teams-app-manifest
-   zip -r ../teams-app-package.zip .
-   ```
+### Option 2: Development Mode (Recommended)
 
-### 3. Install in Teams
+#### Terminal 1: Analytics Service (Python with Debug)
+```bash
+# Activate virtual environment
+source .venv/bin/activate
 
-1. **For testing**: Upload the zip file in Teams Developer Portal
-2. **For production**: Submit for review in Teams App Store
+# Run with Python debug mode for development
+export FLASK_ENV=development  # Enable auto-reload
+python analytics_service.py
 
-## Usage
+# The server will automatically restart when you make changes to analytics_service.py
+```
+
+#### Terminal 2: Bot Development Server (Node.js with Auto-reload)
+```bash
+# Start with nodemon for automatic reloading
+npm run dev
+
+# This will automatically restart when you make changes to TypeScript files
+```
+
+### Option 3: Using Docker (Production)
+
+```bash
+# Build and run with Docker Compose
+docker-compose up --build
+```
+
+### 🔍 Verify Both Services Are Running
+
+#### Check Python Analytics Service
+```bash
+# Test if analytics service is responding
+curl http://localhost:5001/health
+
+# Should return: {"status": "healthy", "service": "analytics"}
+
+# Test analytics endpoint
+curl -X POST http://localhost:5001/analyze \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Show me all tickets", 
+    "user_role": "IT Admin",
+    "user_email": "admin@company.com",
+    "history": []
+  }'
+```
+
+#### Check Bot Service
+```bash
+# Test if bot service is responding
+curl http://localhost:3978/api/messages
+
+# Should return bot framework response
+```
+
+#### Check Both Services at Once
+```bash
+# Check what's running on the required ports
+lsof -i :5001  # Analytics service
+lsof -i :3978  # Bot service
+
+# Should show Python and Node processes
+```
+
+## 🧪 Testing
+
+### Test with Bot Framework Emulator
+1. Download [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator)
+2. Open emulator and connect to `http://localhost:3978/api/messages`
+3. Test different agent types:
+   - Select "Support Agent" for IT support
+   - Select "Data insights Agent" for analytics
+   - Select "Knowledge retrieval Agent" for document search
+
+### Test Analytics Service Directly
+```bash
+# Test analytics endpoint
+curl -X POST http://localhost:5001/analyze \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Show me open tickets",
+    "user_role": "IT Admin",
+    "user_email": "user@company.com",
+    "history": []
+  }'
+```
+
+## 🎯 Usage Guide
 
 ### Bot Commands
-
-- `/help` - Show help information and available commands
+- `/help` - Show help information
 - `/clear` - Clear conversation history
-- **Natural conversation** - Ask questions or have conversations
 
-### Teams Integration
+### Agent Types
 
-The bot automatically:
-- Welcomes new team members
-- Responds to channel events (creation, renaming)
-- Maintains conversation context
-- Provides rich interactive responses
+#### 🎯 Support Agent
+- Technical troubleshooting assistance
+- Step-by-step problem resolution
+- Automatic ticket creation for unresolved issues
+- Real-time thinking messages during processing
 
-## Configuration
+#### 📊 Data Insights Agent  
+- Natural language queries for ticket analytics
+- Role-based data access (IT Admin, Leadership, Normal User)
+- Real-time ticket status updates
+- Advanced filtering and reporting
 
-### Azure OpenAI Settings
+#### 📚 Knowledge Retrieval Agent
+- Internal document search (coming soon)
+- Knowledge base integration
+- FAQ and documentation lookup
 
-You can customize the AI behavior by modifying the `generateOpenAIResponse` method in `src/bot.ts`:
+### Sample Queries for Data Insights Agent
 
-```typescript
-const result = await this.openAIClient.getChatCompletions(
-  process.env.AZURE_OPENAI_DEPLOYMENT_NAME!,
-  messages,
-  {
-    maxTokens: 500,        // Maximum response length
-    temperature: 0.7,      // Creativity (0.0-1.0)
-    topP: 0.95,           // Nucleus sampling
-    frequencyPenalty: 0,   // Reduce repetition
-    presencePenalty: 0     // Encourage new topics
-  }
-);
+```
+"Show me all open tickets"
+"How many tickets were created this month?"
+"What's the status of my tickets?"
+"Show tickets assigned to John Smith"
+"What are the most common ticket types?"
 ```
 
-### Conversation History
+## 🔒 Security & Role-Based Access
 
-The bot maintains conversation history for context. You can adjust the history length in `src/bot.ts`:
+### User Roles
+- **IT Admin**: Full access to all tickets and analytics
+- **Leadership**: Access to organizational analytics and reports
+- **Normal User**: Access only to their own tickets
 
-```typescript
-// Keep only last 10 messages to manage context length
-if (conversationData.messages.length > 10) {
-  conversationData.messages = conversationData.messages.slice(-10);
-}
+### Data Protection
+- Environment variables for sensitive configuration
+- Role-based data filtering in analytics service
+- Secure Power Automate integration
+- No secrets in repository (uses placeholder values)
+
+## 🛠️ Development
+
+### Project Structure
+```
+Plummer_chatbot/
+├── src/
+│   ├── bot.ts              # Main bot logic
+│   ├── index.ts            # Bot server startup
+│   ├── types/index.ts      # TypeScript type definitions
+│   └── utils/config.ts     # Configuration utilities
+├── analytics_service.py    # Python analytics service
+├── IT-Tickets.csv         # Sample ticket data
+├── package.json           # Node.js dependencies
+├── tsconfig.json          # TypeScript configuration
+├── env.example            # Environment template
+└── README.md              # This file
 ```
 
-## Troubleshooting
+### Key Features Implementation
+
+#### Progressive Thinking Messages
+The bot shows real-time feedback:
+- 🤔 "Understanding your request..."
+- 🔍 "Analyzing conversation..."
+- 🔧 "Generating technical solution..."
+- 📊 "Processing analytics query..."
+
+#### Intent Classification
+AI-powered classification routes queries to appropriate handlers:
+- Technical support issues
+- Ticket status inquiries  
+- General conversations
+- Direct ticket creation requests
+
+#### Ticket Integration
+- Power Automate flows for ticket CRUD operations
+- Automatic form pre-filling from conversation context
+- Real-time status updates
+
+## 🐛 Troubleshooting
 
 ### Common Issues
 
-1. **Bot not responding**
-   - Check Azure OpenAI API key and endpoint
-   - Verify bot registration in Azure Bot Service
-   - Ensure messaging endpoint is correct
+#### Bot Not Responding
+```bash
+# Check if both services are running
+curl http://localhost:3978/api/messages  # Bot service
+curl http://localhost:5001/health        # Analytics service
 
-2. **Teams app not loading**
-   - Verify manifest.json is valid
-   - Check validDomains in manifest
-   - Ensure HTTPS is used for production
-
-3. **Authentication errors**
-   - Verify Microsoft App ID and password
-   - Check Azure AD app registration
-   - Ensure proper permissions are granted
-
-### Debug Mode
-
-Enable debug logging by setting:
-```env
-NODE_ENV=development
-DEBUG=botbuilder:*
+# Check environment variables
+echo $AZURE_OPENAI_ENDPOINT
+echo $AZURE_OPENAI_API_KEY
 ```
 
-## Security Considerations
+#### Analytics Service Issues
+```bash
+# Check Python environment
+python --version
+pip list | grep flask
 
-- Store sensitive configuration in environment variables
-- Use Azure Key Vault for production secrets
-- Implement proper authentication and authorization
-- Regularly rotate API keys and passwords
-- Monitor bot usage and implement rate limiting
+# Test analytics service
+python analytics_service.py
+```
 
-## Contributing
+#### Port Conflicts
+```bash
+# Check what's running on ports
+lsof -i :3978  # Bot service
+lsof -i :5001  # Analytics service
+
+# Kill processes if needed
+kill -9 <PID>
+```
+
+### Debug Mode
+```bash
+# Enable debug logging
+export DEBUG=botbuilder:*
+export NODE_ENV=development
+npm run dev
+```
+
+## 🚀 Deployment
+
+### Azure Deployment
+1. Deploy bot service to Azure App Service
+2. Deploy analytics service to Azure Container Instances or App Service
+3. Configure environment variables in Azure
+4. Update Power Automate flows with production URLs
+
+### Environment Variables for Production
+```env
+NODE_ENV=production
+PORT=443
+AZURE_OPENAI_ENDPOINT=https://your-prod-resource.openai.azure.com/
+# ... other production configs
+```
+
+## 📚 API Documentation
+
+### Analytics Service Endpoints
+
+#### POST /analyze
+Analyze tickets based on natural language query
+```json
+{
+  "query": "Show me open tickets",
+  "user_role": "IT Admin",
+  "user_email": "user@company.com",
+  "history": []
+}
+```
+
+#### GET /health
+Health check endpoint for monitoring
+
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a feature branch: `git checkout -b feature/new-feature`
 3. Make your changes
-4. Add tests if applicable
+4. Test both bot and analytics services
 5. Submit a pull request
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
-## Support
+## 🆘 Support
 
-For support and questions:
-- Check the [Microsoft Teams documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/)
-- Review [Azure OpenAI documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/openai/)
-- Open an issue in this repository
+For support:
+- 📖 Check Microsoft Teams documentation
+- 🔗 Review Azure OpenAI documentation  
+- 🐛 Open an issue in this repository
+- 💬 Contact the development team
 
-## References
+---
 
-- [Microsoft Teams Bot Framework](https://dev.botframework.com/)
-- [Azure OpenAI Service](https://azure.microsoft.com/en-us/services/cognitive-services/openai-service/)
-- [Teams Toolkit](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/overview)
-- [Bot Framework SDK](https://github.com/microsoft/botbuilder-js) 
+**Made with ❤️ for intelligent IT support and analytics** 
