@@ -1,3 +1,5 @@
+export type IntentResponseType = 'technical_support' | 'general_conversation' | 'direct_ticket' | 'ticket_status_inquiry' | 'analytics_inquiry';
+
 export interface ConversationMessage {
   role: 'user' | 'assistant' | 'system';
   content: string;

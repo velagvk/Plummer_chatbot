@@ -15,7 +15,7 @@ import {
 } from 'botbuilder';
 import { OpenAIClient, AzureKeyCredential } from '@azure/openai';
 import * as dotenv from 'dotenv';
-import { ConversationData, ConversationMessage } from './types';
+import { ConversationData, ConversationMessage, IntentResponseType } from './types';
 import axios from 'axios';
 
 dotenv.config();
@@ -279,6 +279,14 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
         await context.sendActivity("This is a placeholder for searching internal documents. This feature is coming soon!");
         return;
       case 'Data insights Agent':
+        // First, classify the user's intent to check if they are asking for support
+        const analyticsIntent: { responseType: IntentResponseType; reasoning: string; } = await this.classifyUserIntent(context.activity.text, conversationData.messages);
+        if (analyticsIntent.responseType === 'technical_support' || analyticsIntent.responseType === 'direct_ticket') {
+            await context.sendActivity("It looks like you're asking for technical support. For that, you'll need to switch to the 'Support Agent'.");
+            await this.sendModeSelectionCard(context, conversationData.userRole || 'User');
+            return;
+        }
+
         console.log('Executing analytics case for query:', context.activity.text);
         
         // Check if user has selected a role
@@ -372,8 +380,15 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
         try {
           // Classify the user's intent using AI
           await context.sendActivity('🤔 Understanding your request...');
-          const intentClassification = await this.classifyUserIntent(context.activity.text, conversationData.messages);
+          const intentClassification: { responseType: IntentResponseType; reasoning: string; } = await this.classifyUserIntent(context.activity.text, conversationData.messages);
           console.log('User intent classified as:', intentClassification.responseType);
+
+          // Handle wrong mode for analytics inquiry
+          if (intentClassification.responseType === 'analytics_inquiry') {
+              await context.sendActivity("It looks like you're asking an analytics question. For that, you'll need to switch to the 'Data insights Agent'.");
+              await this.sendModeSelectionCard(context, conversationData.userRole || 'User');
+              return;
+          }
 
           let response: string;
 
@@ -655,7 +670,7 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
   }
 
   private async classifyUserIntent(userQuery: string, conversationHistory: ConversationMessage[]): Promise<{
-    responseType: 'technical_support' | 'general_conversation' | 'direct_ticket' | 'ticket_status_inquiry';
+    responseType: IntentResponseType;
     reasoning: string;
   }> {
     try {
@@ -674,23 +689,26 @@ CURRENT USER QUERY: "${userQuery}"
 
 Analyze the user's query and classify it into one of these categories:
 
-1. **technical_support**: User has a technical problem that needs troubleshooting steps AND might require an IT ticket if solutions don't work
+1. **technical_support**: User has a technical problem that needs troubleshooting steps AND might require an IT ticket if solutions don't work.
    - Examples: "My computer is slow", "I can't access email", "Software won't open", "Network issues"
    
-2. **general_conversation**: General questions, greetings, or non-technical queries
+2. **general_conversation**: General questions, greetings, or non-technical queries.
    - Examples: "Hello", "How are you?", "What can you do?", "Thank you"
    
-3. **direct_ticket**: User explicitly wants to create a ticket immediately
+3. **direct_ticket**: User explicitly wants to create a ticket immediately.
    - Examples: "Create a ticket", "I need to raise a ticket", "File a support request"
 
-4. **ticket_status_inquiry**: User is asking about the status of their existing tickets or wants to check their submitted tickets
-   - Examples: "What's the status of my ticket?", "Check my ticket status", "Has my ticket been resolved?", "Show me my tickets", "What tickets do I have open?"
+4. **ticket_status_inquiry**: User is asking about the status of their *own* existing tickets or wants to check *their* submitted tickets.
+   - Examples: "What's the status of my ticket?", "Check my ticket status", "Has my ticket been resolved?", "Show me my tickets"
 
-IMPORTANT: Only classify as 'technical_support' if the user describes an actual technical problem that would benefit from troubleshooting steps.
+5. **analytics_inquiry**: User is asking a broad question about ticket data, trends, or analytics that is not about their own specific tickets.
+   - Examples: "How many tickets were created last month?", "What are the most common ticket types?", "Show all tickets assigned to John"
+
+IMPORTANT: Only classify as 'technical_support' if the user describes an actual technical problem. Classify as 'ticket_status_inquiry' only for personal ticket status checks.
 
 Respond with ONLY a JSON object in this format:
 {
-  "responseType": "technical_support|general_conversation|direct_ticket|ticket_status_inquiry",
+  "responseType": "technical_support|general_conversation|direct_ticket|ticket_status_inquiry|analytics_inquiry",
   "reasoning": "Brief explanation of why you chose this classification"
 }`;
 
@@ -707,7 +725,7 @@ Respond with ONLY a JSON object in this format:
           const parsed = JSON.parse(jsonMatch[0]);
           console.log('Intent classification:', parsed);
           return {
-            responseType: parsed.responseType || 'general_conversation',
+            responseType: parsed.responseType as IntentResponseType || 'general_conversation',
             reasoning: parsed.reasoning || 'Default classification'
           };
         }
@@ -1010,6 +1028,49 @@ User Request: "I can't log in to the finance portal, I am completely blocked."
     } catch (error) {
       console.error('OpenAI API error:', error);
       throw error;
+    }
+  }
+
+  private async generateAnalyticsResponse(userQuery: string, conversationHistory: ConversationMessage[]): Promise<string> {
+    try {
+      // Add conversation history context
+      const conversationContext = conversationHistory
+        .slice(-3) // Last 3 messages for context
+        .map(msg => `${msg.role}: ${msg.content}`)
+        .join('\n');
+
+      const systemPrompt = `You are a helpful IT support assistant that provides information about ticket analytics.
+
+CONVERSATION HISTORY:
+${conversationContext}
+
+USER'S QUESTION: "${userQuery}"
+
+Instructions:
+- Answer the user's question about ticket analytics based on the provided ticket data.
+- Be specific and reference ticket IDs, titles, and statuses when relevant.
+- If no data is available, politely explain that no analytics data is available.
+- Provide helpful information about ticket trends and next steps.
+- Be professional and concise.
+
+Provide a helpful response to their question:`;
+
+      const result = await this.openAIClient.getChatCompletions(
+        process.env.AZURE_OPENAI_DEPLOYMENT_NAME!,
+        [{ role: 'system', content: systemPrompt }],
+        {
+          maxTokens: 500,
+          temperature: 0.3,
+          topP: 0.95,
+          frequencyPenalty: 0,
+          presencePenalty: 0
+        }
+      );
+
+      return result.choices[0]?.message?.content || 'I apologize, but I couldn\'t provide analytics information at this time.';
+    } catch (error) {
+      console.error('Error generating analytics response:', error);
+      return 'I encountered an error while providing analytics information. Please try again later.';
     }
   }
 

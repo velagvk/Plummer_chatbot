@@ -68,6 +68,7 @@ RULES:
 - You have access to a pandas DataFrame named 'df'.
 - Use the provided column descriptions to understand the data.
 - Your output MUST be the direct result of the pandas query. Do not provide any conversational text or explanation.
+- IMPORTANT: When working with date columns, always convert them to datetime objects using pd.to_datetime() before sorting or comparing.
 
 COLUMN DESCRIPTIONS:
 - "ID": A unique numeric identifier for each ticket.
@@ -78,7 +79,7 @@ COLUMN DESCRIPTIONS:
 - "IT_TECH_Scope", "IT_TECH_Impact": Technical assessment of the ticket's scope and impact.
 - "VScope", "VImpact", "VPriority": Business-level assessment of scope, impact, and priority, likely numeric codes.
 - "Tech_Tag", "Resolution_Tag": Keywords for the technical area and the final resolution.
-- "Created", "Modified", "Closed Date", "Assigned Date": Timestamps for the ticket's lifecycle events. These are date/time objects.
+- "Created", "Modified", "Closed Date", "Assigned Date": Timestamps for the ticket's lifecycle events. These are stored as STRING dates in format "M/D/YYYY H:MM AM/PM". ALWAYS convert to datetime using pd.to_datetime() before any date operations.
 - "CreatedBy", "ModifiedBy": The full names of the individuals who created or modified the ticket.
 - "CreatedEmail": The email address of the person who created the ticket.
 - "FirstName", "LastName", "JobTitle", "Department", "Office", "MobilePhone": Detailed profile information about the person who submitted the ticket.
@@ -99,6 +100,11 @@ COLUMN DESCRIPTIONS:
 - "Created_For_Email": The email of the person for whom the ticket was created.
 - "IND_ID": A unique identifier for the individual user.
 - "Priority": The overall priority level of the ticket (e.g., '4 - Normal').
+
+IMPORTANT EXAMPLES FOR DATE QUERIES:
+- To find the oldest ticket by creation date: df.loc[df['Created'].notna()].assign(Created_dt=pd.to_datetime(df['Created'])).sort_values('Created_dt').iloc[0]
+- To sort by creation date: df.assign(Created_dt=pd.to_datetime(df['Created'])).sort_values('Created_dt')
+- Always use pd.to_datetime() when working with the Created, Modified, Closed Date, or Assigned Date columns.
 """
 
 # --- Create the LangChain Agent ---
@@ -108,7 +114,6 @@ agent = create_pandas_dataframe_agent(
     agent_type=AgentType.OPENAI_FUNCTIONS,
     prefix=AGENT_PREFIX,
     verbose=True,
-    handle_parsing_errors=True,
     allow_dangerous_code=True,  # Required for pandas agent to execute code
 ) if df is not None else None
 
@@ -202,7 +207,6 @@ async def analyze_data(request: QueryRequest):
             agent_type=AgentType.OPENAI_FUNCTIONS,
             prefix=AGENT_PREFIX,
             verbose=True,
-            handle_parsing_errors=True,
             allow_dangerous_code=True,
         )
         
