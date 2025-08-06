@@ -20,6 +20,12 @@ import axios from 'axios';
 
 dotenv.config();
 
+// Define a list of privileged users by their email address
+const aAadhardcodedPrivilegedUsers = [
+    'vkumar9174@plummer.com',
+    'another.privileged.user@example.com' 
+];
+
 export class TeamsOpenAIBot extends TeamsActivityHandler {
   private conversationDataAccessor: StatePropertyAccessor<ConversationData>;
   private userProfileAccessor: StatePropertyAccessor<any>;
@@ -73,7 +79,7 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
         await this.conversationDataAccessor.set(context, conversationData);
         await this.conversationState.saveChanges(context);
         console.log('Role set to:', context.activity.value.role);
-        await this.sendModeSelectionCard(context, context.activity.value.role);
+        await this.sendDynamicModeSelectionCard(context, context.activity.value.role);
         return; // Stop processing after handling the card
       }
 
@@ -121,7 +127,51 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
     // });
   }
 
-  private async sendModeSelectionCard(context: TurnContext, userRole: string): Promise<void> {
+  private async sendDynamicModeSelectionCard(context: TurnContext, userRole: string): Promise<void> {
+    let userEmail = '';
+    try {
+      // Fetch the user's profile details from Teams
+      if (context.activity.channelId === 'msteams') {
+        const member = await TeamsInfo.getMember(context, context.activity.from.id);
+        userEmail = member.email || member.userPrincipalName || '';
+        console.log(`User email fetched from Teams: ${userEmail}`);
+      } else {
+        // Fallback for emulator testing
+        userEmail = 'vkumar9174@plummer.com';
+        console.log(`Running in emulator, using test email: ${userEmail}`);
+      }
+    } catch (e) {
+      console.error('Could not fetch member details', e);
+    }
+  
+    // Check if the user is in our privileged list
+    const isPrivileged = aAadhardcodedPrivilegedUsers.includes(userEmail.toLowerCase());
+    console.log(`Is user privileged? ${isPrivileged}`);
+  
+    // Dynamically build the list of actions (buttons) for the card
+    const actions = [
+      {
+        type: 'Action.Submit',
+        title: 'Support Agent',
+        data: { action: 'selectMode', mode: 'Support Agent' }
+      },
+      {
+        type: 'Action.Submit',
+        title: 'Knowledge retrieval Agent',
+        data: { action: 'selectMode', mode: 'Knowledge retrieval Agent' }
+      }
+    ];
+  
+    // If the user is privileged, add the 'Data insights Agent' button
+    if (isPrivileged) {
+      actions.push({
+        type: 'Action.Submit',
+        title: 'Data insights Agent',
+        data: { action: 'selectMode', mode: 'Data insights Agent' }
+      });
+    }
+  
+    // Create and send the adaptive card
     const modeCard = CardFactory.adaptiveCard({
       type: 'AdaptiveCard',
       version: '1.2',
@@ -138,25 +188,9 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
           wrap: true
         }
       ],
-      actions: [
-        {
-          type: 'Action.Submit',
-          title: 'Support Agent',
-          data: { action: 'selectMode', mode: 'Support Agent' }
-        },
-        {
-          type: 'Action.Submit',
-          title: 'Knowledge retrieval Agent',
-          data: { action: 'selectMode', mode: 'Knowledge retrieval Agent' }
-        },
-        {
-          type: 'Action.Submit',
-          title: 'Data insights Agent',
-          data: { action: 'selectMode', mode: 'Data insights Agent' }
-        }
-      ]
+      actions: actions
     });
-
+  
     await context.sendActivity({ attachments: [modeCard] });
   }
 
@@ -218,6 +252,10 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
   }
 
   private async handleMessage(context: TurnContext): Promise<void> {
+    console.log('\n--- INSIDE handleMessage ---');
+    console.log('Activity type:', context.activity.type);
+    console.log('Activity text:', context.activity.text);
+
     // 1. Handle the incoming card submission
     if (context.activity.value && context.activity.value.action === 'saveTicket') {
       await context.sendActivity('⚙️ Processing ticket submission...');
@@ -269,6 +307,54 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
       pendingTicketContext: undefined
     });
 
+    // Handle greeting detection - respond with welcome message when user says 'hi'
+    if (text === 'hi' || text === 'hello' || text === 'hey') {
+      await this.sendWelcomeMessage(context);
+      return;
+    }
+
+    // Handle agent switching requests
+    if (this.isAgentSwitchRequest(text)) {
+      const requestedAgent = this.extractRequestedAgent(text);
+      if (requestedAgent) {
+        // Check if user has a role, if not, show role selection first
+        if (!conversationData.userRole) {
+          await context.sendActivity("Please select your role first to switch agents.");
+          await this.sendWelcomeMessage(context);
+          return;
+        }
+        
+        // Update the current mode
+        conversationData.currentMode = requestedAgent;
+        await this.conversationDataAccessor.set(context, conversationData);
+        await this.conversationState.saveChanges(context);
+        
+        // Send confirmation message
+        let confirmationMessage: string;
+        switch (requestedAgent) {
+          case 'Support Agent':
+            confirmationMessage = "Switched to Support Agent. Hi, I am your IT support Agent, how may I help you today?";
+            break;
+          case 'Data insights Agent':
+            confirmationMessage = "Switched to Data insights Agent. Hi, I am your Data insights Agent, how may I help you today?";
+            break;
+          case 'Knowledge retrieval Agent':
+            confirmationMessage = "Switched to Knowledge retrieval Agent. Hi, I am your Knowledge retrieval Agent, how may I help you today?";
+            break;
+          default:
+            confirmationMessage = `Switched to ${requestedAgent}. How can I help you today?`;
+        }
+        
+        await context.sendActivity(confirmationMessage);
+        return;
+      } else {
+        // User requested to switch but didn't specify which agent
+        await context.sendActivity("Which agent would you like to switch to?");
+        await this.sendDynamicModeSelectionCard(context, conversationData.userRole || 'User');
+        return;
+      }
+    }
+
     console.log('Current mode for user query:', conversationData.currentMode);
     console.log('User query:', context.activity.text);
 
@@ -283,7 +369,7 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
         const analyticsIntent: { responseType: IntentResponseType; reasoning: string; } = await this.classifyUserIntent(context.activity.text, conversationData.messages);
         if (analyticsIntent.responseType === 'technical_support' || analyticsIntent.responseType === 'direct_ticket') {
             await context.sendActivity("It looks like you're asking for technical support. For that, you'll need to switch to the 'Support Agent'.");
-            await this.sendModeSelectionCard(context, conversationData.userRole || 'User');
+            await this.sendDynamicModeSelectionCard(context, conversationData.userRole || 'User');
             return;
         }
 
@@ -313,8 +399,9 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
           
           console.log(`Analytics request for ${conversationData.userRole} (${userEmail})`);
           
-          // Prepare the history to be sent to the analytics service
-          const history = conversationData.messages.map(msg => ({
+          // Prepare the history to be sent to the analytics service (limit to last 5 messages for token optimization)
+          const recentMessages = conversationData.messages.slice(-5);
+          const history = recentMessages.map(msg => ({
             role: msg.role,
             content: msg.content
           }));
@@ -380,13 +467,14 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
         try {
           // Classify the user's intent using AI
           await context.sendActivity('🤔 Understanding your request...');
+          console.log('\n--- CALLING classifyUserIntent (OpenAI) ---');
           const intentClassification: { responseType: IntentResponseType; reasoning: string; } = await this.classifyUserIntent(context.activity.text, conversationData.messages);
           console.log('User intent classified as:', intentClassification.responseType);
 
           // Handle wrong mode for analytics inquiry
           if (intentClassification.responseType === 'analytics_inquiry') {
               await context.sendActivity("It looks like you're asking an analytics question. For that, you'll need to switch to the 'Data insights Agent'.");
-              await this.sendModeSelectionCard(context, conversationData.userRole || 'User');
+              await this.sendDynamicModeSelectionCard(context, conversationData.userRole || 'User');
               return;
           }
 
@@ -1124,5 +1212,22 @@ Provide a helpful response to their question:`;
   private async sendTeamMemberAddedMessage(context: TurnContext, member: any, teamInfo: TeamInfo): Promise<void> {
     const message = `Welcome **${member.name}** to team **${teamInfo.name}**! I\'m here to help with any questions.`;
     await context.sendActivity(message);
+  }
+
+  private isAgentSwitchRequest(text: string): boolean {
+    const lowerCaseText = text.toLowerCase();
+    return lowerCaseText.includes('switch to') || lowerCaseText.includes('change to') || lowerCaseText.includes('go to');
+  }
+
+  private extractRequestedAgent(text: string): 'Support Agent' | 'Knowledge retrieval Agent' | 'Data insights Agent' | null {
+    const lowerCaseText = text.toLowerCase();
+    if (lowerCaseText.includes('support agent')) {
+      return 'Support Agent';
+    } else if (lowerCaseText.includes('data insights agent')) {
+      return 'Data insights Agent';
+    } else if (lowerCaseText.includes('knowledge retrieval agent')) {
+      return 'Knowledge retrieval Agent';
+    }
+    return null;
   }
 } 

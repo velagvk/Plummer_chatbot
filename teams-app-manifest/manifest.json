@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
   "manifestVersion": "1.14",
   "version": "1.0.0",
-  "id": "{{TEAMS_APP_ID}}",
+  "id": "e5e830c5-a9a6-42eb-a5cc-e82fb345bee5",
   "packageName": "com.microsoft.teams.openai.bot",
   "developer": {
     "name": "Your Organization",
@@ -27,7 +27,7 @@
   "staticTabs": [],
   "bots": [
     {
-      "botId": "{{TEAMS_APP_ID}}",
+      "botId": "e5e830c5-a9a6-42eb-a5cc-e82fb345bee5",
       "scopes": [
         "personal",
         "team",
@@ -44,24 +44,12 @@
           ],
           "commands": [
             {
-              "id": "help",
-              "type": "action",
-              "context": [
-                "message"
-              ],
-              "description": "Show help information",
-              "title": "Help",
-              "fetchTask": false
+              "title": "help",
+              "description": "Show help information"
             },
             {
-              "id": "clear",
-              "type": "action",
-              "context": [
-                "message"
-              ],
-              "description": "Clear conversation history",
-              "title": "Clear History",
-              "fetchTask": false
+              "title": "clear",
+              "description": "Clear conversation history"
             }
           ]
         }
@@ -75,10 +63,10 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "{{BOT_DOMAIN}}"
+    "fb52554908bf.ngrok-free.app"
   ],
   "webApplicationInfo": {
-    "id": "{{TEAMS_APP_ID}}",
-    "resource": "https://{{BOT_DOMAIN}}"
+    "id": "e5e830c5-a9a6-42eb-a5cc-e82fb345bee5",
+    "resource": "https://fb52554908bf.ngrok-free.app"
   }
 } 

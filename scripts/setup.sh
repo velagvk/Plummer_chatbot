@@ -48,3 +48,23 @@ echo "2. Run 'npm run dev' to start the development server"
 echo "3. Test with Bot Framework Emulator at http://localhost:3978/api/messages"
 echo ""
 echo "For deployment instructions, see README.md" 
+
+# This script downloads placeholder icons for the Teams application manifest.
+
+# URL for a generic blue square placeholder icon (192x192)
+COLOR_ICON_URL="https://placehold.co/192x192/0078D4/FFFFFF/png?text=Bot"
+
+# URL for a generic white square placeholder icon (32x32)
+OUTLINE_ICON_URL="https://placehold.co/32x32/FFFFFF/000000/png?text=B"
+
+# Directory where the icons should be saved
+DEST_DIR="teams-app-manifest"
+
+# Download the icons using curl
+echo "Downloading color.png..."
+curl -L -o "$DEST_DIR/color.png" "$COLOR_ICON_URL"
+
+echo "Downloading outline.png..."
+curl -L -o "$DEST_DIR/outline.png" "$OUTLINE_ICON_URL"
+
+echo "Icon download complete." 

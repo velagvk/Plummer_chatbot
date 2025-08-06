@@ -6,6 +6,16 @@ import * as dotenv from 'dotenv';
 // Load environment variables
 dotenv.config();
 
+// =================================================================
+// ===                 ENHANCED DEBUGGING CONFIG                ===
+// =================================================================
+console.log('\n=== BOT CONFIGURATION DEBUG ===');
+console.log('BOT_ID:', process.env.BOT_ID ? `${process.env.BOT_ID.substring(0, 8)}...` : 'NOT SET');
+console.log('BOT_PASSWORD:', process.env.BOT_PASSWORD ? 'SET (length: ' + process.env.BOT_PASSWORD.length + ')' : 'NOT SET');
+console.log('PORT:', process.env.PORT || '3978 (default)');
+console.log('NODE_ENV:', process.env.NODE_ENV || 'not set');
+console.log('================================\n');
+
 // Create HTTP server
 const server = restify.createServer();
 server.listen(process.env.PORT || 3978, () => {
@@ -16,9 +26,17 @@ server.listen(process.env.PORT || 3978, () => {
 
 // Create adapter
 const adapter = new BotFrameworkAdapter({
-  appId: process.env.MICROSOFT_APP_ID,
-  appPassword: process.env.MICROSOFT_APP_PASSWORD
+  appId: process.env.BOT_ID,
+  appPassword: process.env.BOT_PASSWORD,
+  channelAuthTenant: process.env.BOT_TENANT_ID
 });
+
+// =================================================================
+// ===              ENHANCED ADAPTER DEBUGGING                  ===
+// =================================================================
+console.log('\n=== ADAPTER CONFIGURATION DEBUG ===');
+console.log('Adapter Configuration Created Successfully');
+console.log('====================================\n');
 
 // Add error handler
 adapter.onTurnError = async (context, error) => {
@@ -47,9 +65,115 @@ const bot = new TeamsOpenAIBot(conversationState, userState);
 
 // Listen for incoming requests
 server.post('/api/messages', async (req, res) => {
-  await adapter.processActivity(req, res, async (context) => {
-    await bot.run(context);
+  console.log('\n=== INCOMING REQUEST DEBUG ===');
+  console.log('Timestamp:', new Date().toISOString());
+  console.log('Request Headers:', {
+    'authorization': req.headers.authorization ? 'Bearer ***' : 'MISSING',
+    'content-type': req.headers['content-type'],
+    'user-agent': req.headers['user-agent'],
+    'x-forwarded-for': req.headers['x-forwarded-for'],
+    'host': req.headers.host
   });
+  console.log('Request Body Keys:', Object.keys(req.body || {}));
+  
+  // =================================================================
+  // ===              ENHANCED JWT TOKEN DEBUGGING                ===
+  // =================================================================
+  try {
+    const authHeader = req.headers.authorization;
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.substring(7);
+      const [header, payload, signature] = token.split('.');
+      const decodedHeader = JSON.parse(Buffer.from(header, 'base64').toString('utf-8'));
+      const decodedPayload = JSON.parse(Buffer.from(payload, 'base64').toString('utf-8'));
+      
+      console.log('\n--- COMPREHENSIVE JWT DEBUG ---');
+      console.log('JWT Header:', decodedHeader);
+      console.log('JWT Payload Claims:');
+      console.log('  Issuer (iss):', decodedPayload.iss);
+      console.log('  Audience (aud):', decodedPayload.aud);
+      console.log('  Tenant ID (tid):', decodedPayload.tid || 'undefined');
+      console.log('  App ID (appid):', decodedPayload.appid || 'undefined');
+      console.log('  Subject (sub):', decodedPayload.sub || 'undefined');
+      console.log('  Service URL (serviceurl):', decodedPayload.serviceurl || 'undefined');
+      console.log('  Expiration (exp):', decodedPayload.exp ? new Date(decodedPayload.exp * 1000).toISOString() : 'undefined');
+      console.log('  Not Before (nbf):', decodedPayload.nbf ? new Date(decodedPayload.nbf * 1000).toISOString() : 'undefined');
+      console.log('  Issued At (iat):', decodedPayload.iat ? new Date(decodedPayload.iat * 1000).toISOString() : 'undefined');
+      console.log('  All Available Claims:', Object.keys(decodedPayload));
+      
+      // Check token expiration
+      const now = Math.floor(Date.now() / 1000);
+      const isExpired = decodedPayload.exp && decodedPayload.exp < now;
+      const isNotYetValid = decodedPayload.nbf && decodedPayload.nbf > now;
+      console.log('  Token Status:');
+      console.log('    Current Unix Time:', now);
+      console.log('    Is Expired:', isExpired);
+      console.log('    Is Not Yet Valid:', isNotYetValid);
+      console.log('    Is Valid Time Window:', !isExpired && !isNotYetValid);
+      
+      // Compare with adapter configuration
+      console.log('  Configuration Comparison:');
+      console.log('    JWT Audience:', decodedPayload.aud);
+      console.log('    Expected App ID (from env):', process.env.BOT_ID);
+      console.log('    JWT App ID (appid claim):', decodedPayload.appid);
+      console.log('    Audience matches Expected:', decodedPayload.aud === process.env.BOT_ID);
+      console.log('-----------------------------\n');
+    } else {
+      console.log('❌ NO AUTHORIZATION HEADER FOUND');
+      console.log('Available headers:', Object.keys(req.headers));
+    }
+  } catch (err) {
+    console.error('❌ Error decoding JWT for debugging:', err);
+  }
+
+  // =================================================================
+  // ===                ADAPTER PROCESSING DEBUG                  ===
+  // =================================================================
+  console.log('\n=== ADAPTER PROCESSING ===');
+  console.log('About to call adapter.processActivity...');
+  
+  await adapter.processActivity(req, res, async (context) => {
+    console.log('\n--- CONTEXT DEBUG ---');
+    console.log('✅ Successfully entered processActivity callback');
+    console.log('Activity Details:');
+    console.log('  Type:', context.activity.type);
+    console.log('  Channel ID:', context.activity.channelId);
+    console.log('  Service URL:', context.activity.serviceUrl);
+    console.log('  From ID:', context.activity.from?.id);
+    console.log('  From Name:', context.activity.from?.name);
+    console.log('  Recipient ID:', context.activity.recipient?.id);
+    console.log('  Recipient Name:', context.activity.recipient?.name);
+    console.log('  Text:', context.activity.text);
+    console.log('  Conversation ID:', context.activity.conversation?.id);
+    console.log('  Conversation Tenant ID:', context.activity.conversation?.tenantId);
+    console.log('-------------------\n');
+    
+    console.log('🤖 About to run bot logic...');
+    await bot.run(context);
+    console.log('✅ Bot logic completed successfully');
+    
+  }).catch((err) => {
+    console.error('\n=== ADAPTER ERROR DETAILS ===');
+    console.error('❌ Error in adapter.processActivity:');
+    console.error('Error Name:', err.name);
+    console.error('Error Message:', err.message);
+    console.error('Error Code:', err.code);
+    console.error('Error Status:', err.status);
+    console.error('Error Body:', err.body);
+    console.error('Full Error Object:', err);
+    console.error('Error Stack:', err.stack);
+    console.error('=============================\n');
+    
+    // Send more detailed error response
+    const errorResponse = {
+      error: 'Bot processing failed',
+      message: err.message,
+      timestamp: new Date().toISOString()
+    };
+    res.send(500, errorResponse);
+  });
+  
+  console.log('=== REQUEST PROCESSING COMPLETE ===\n');
 });
 
 // Health check endpoint
