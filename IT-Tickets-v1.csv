@@ -1,0 +1,667 @@
+ID,Ticket Title,Support_Request,Ticket_Type,Status,Created Date,CreatedBy,CreatedEmail,Assigned To,Closed Date,Priority,Resolution days
+1,Kirantest_Dev,This ticket is to test the latest data source.,Technical Support,7. Closed - Unresolved,1/29/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",2/15/25,4 - Normal,17
+2,Kiran Test2,Test for automation process.,Technical Support,9. Reopen,2/5/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",2/26/25,4 - Normal,21
+3,Testing Email - Laptop issue,,Technical Support,7. Closed - Unresolved,2/3/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,3/1/25,,26
+4,Test- System network issue,,Technical Support,4. Closed - Resolved,7/2/25,KiranTest,KiranTest@plummer.com,"Kumar, Kiran",7/31/25,4 - Normal,29
+5,Keyboard not working,,Technical Support,4. Closed - Resolved,7/25/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",8/6/25,4 - Normal,12
+6,Mouse issue,Updated issue description,Technical Support,5. Closed - Cancelled,2/17/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",3/16/25,4 - Normal,27
+7,KiranTest3,Testing note 1.,Technical Support,4. Closed - Resolved,1/14/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,1/26/25,1 - Critical,12
+8,KiranTest3,,Technical Support,4. Closed - Resolved,3/29/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,4/26/25,,28
+9,Test3,Test for ticket notes.,Technical Support,4. Closed - Resolved,7/15/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/28/25,,13
+10,Test 4,This is test for testing the workflow adding item.,Technical Support,2. In Progress,1/25/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",1/30/25,1 - Critical,5
+11,Kiran Test 5,Support request test,Technical Support,5. Closed - Cancelled,4/20/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,5/18/25,,28
+12,Kiran Test Note1,,Technical Support,3. Pending,3/18/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",3/26/25,4 - Normal,8
+13,KiranTest Note2,This issue with ticket notes testing.,Technical Support,2. In Progress,7/6/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",7/24/25,1 - Critical,18
+14,Kiran Test attachment,This ticket is to test attachment bug.,Technical Support,4. Closed - Resolved,6/12/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/21/25,1 - Critical,9
+15,KiranTestSp1,This ticket is to test for SP list copy files.,Technical Support,4. Closed - Resolved,5/7/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",5/19/25,4 - Normal,12
+16,KiranTest account test1,This ticket is to test new list.,Technical Support,4. Closed - Resolved,7/1/25,KiranTest,KiranTest@plummer.com,Unassigned,7/5/25,1 - Critical,4
+17,KiranTest2,Ticket for testing Ts2.,Technical Support,1. New,1/13/25,KiranTest,KiranTest@plummer.com,Unassigned,1/13/25,,0
+18,Laptop showing blue screen - Test,Sometimes my laptop turning off abruptly showing blue screen,Technical Support,4. Closed - Resolved,7/19/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",7/20/25,4 - Normal,1
+19,KiranTest1.,,Technical Support,4. Closed - Resolved,6/19/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",6/24/25,,5
+20,KiranTest2,Using the ticket notes2 test.,Technical Support,1. New,7/23/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,8/14/25,,22
+21,KiranTest2,Test for new block.,Technical Support,1. New,5/2/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,5/15/25,,13
+22,KiranTest2,This ticket is tested for using of creating new notes.,Technical Support,1. New,1/3/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,1/3/25,1 - Critical,0
+23,KiranTest5,Ticket is for ,Technical Support,1. New,6/3/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/23/25,,20
+24,Testing new column,added new column in SP for change,Technical Support,2. In Progress,5/18/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",5/24/25,4 - Normal,6
+25,Test 9,This ticket is to test and remove the Black screen.,Technical Support,1. New,2/6/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/6/25,,28
+26,KiranTest8,,Technical Support,1. New,7/27/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,8/3/25,,7
+27,Testing one more time,Notes should work now,Technical Support,2. In Progress,7/21/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",7/22/25,4 - Normal,1
+28,KiranTest#5,This ticket to test created by and Modified by for workflow.,Technical Support,1. New,4/23/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,4/30/25,,7
+29,KiranTest#6,This ticket is to test the app new block.,Technical Support,1. New,5/22/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/2/25,1 - Critical,11
+30,Kiran Test ,,Technical Support,1. New,7/1/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/8/25,,7
+31,KiranTest5,Adding new notes,Technical Support,1. New,5/27/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/11/25,,15
+32,Test2,,Technical Support,1. New,7/10/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/10/25,,0
+33,Test5,,Technical Support,1. New,1/20/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,2/8/25,,19
+34,Kirantest6,,Technical Support,1. New,2/15/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/6/25,,19
+35,KiranTest7,,Technical Support,1. New,1/28/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,2/7/25,,10
+36,vhvbjm,,Technical Support,1. New,5/12/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",6/5/25,,24
+37,TestVidya,TestVidya,Technical Support,1. New,3/7/25,,,"Kumar, Kiran",3/19/25,,12
+38,KiranPurTest1,,Purchase Support,1. New,7/23/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,8/21/25,,29
+39,KiranPurTest2,For testing the new ticket2,Purchase Support,1. New,3/29/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,4/13/25,,15
+40,Kiran Pur request,The description about the request,Purchase Support,1. New,7/14/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/30/25,,16
+41,KiranPur Request 4,test2,Purchase Support,1. New,6/6/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/13/25,,7
+42,OnboardingTest,OnboardingTest description,HR Onboarding,1. New,7/11/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,7/16/25,,5
+43,Kiran Pur Test3,This is about to enter the info about ticket system description.,Purchase Support,1. New,5/9/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,5/9/25,,0
+44,Test ticket from JRL,,Technical Support,1. New,5/5/25,"Lockett, Johnny",jlockett@plummer.com,Unassigned,5/25/25,,20
+45,TEST Ticket from JRL,,Technical Support,1. New,4/20/25,"Cissell,Kevin",kcissell@plummer.com,Unassigned,5/4/25,,14
+46,test 1 - email to itsupport@plummer.com by jmartin on June 3 at 332PM CST,,Technical Support,1. New,5/31/25,"Martin, Josh",jmartin@plummer.com,Unassigned,6/15/25,,15
+47,TEST Ticket frm ,,Technical Support,1. New,8/1/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,8/17/25,,16
+48,Test ticket of User communication,,Technical Support,1. New,4/29/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,5/25/25,,26
+49,Test ticket2,,Technical Support,1. New,2/22/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/18/25,,24
+50,Laptop Monitor issue,,Technical Support,9. Reopen,7/27/25,"Kumar, Kiran",kkumar9127@plummer.com,"Dontamsetty, Vidyasagar",8/21/25,,25
+51,onboard test2,This is an onboarding request,HR Onboarding,2. In Progress,6/11/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",6/20/25,,9
+52,KiranSLA Test,This ticket to test for SLA alert.,Technical Support,9. Reopen,2/25/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",3/1/25,4 - Normal,4
+53,Test IT projects,this needs to be tested ,Project Support,1. New,4/27/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,5/18/25,,21
+54,Kiran SLA test2,This ticket is to test SLA alert 2.,Technical Support,7. Closed - Unresolved,1/4/25,"Kumar, Kiran",kkumar9127@plummer.com,"Lockett, Johnny",1/26/25,4 - Normal,22
+55,kiran SLA test3,This ticket is to test the SLA alert.,Technical Support,1. New,4/17/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",5/12/25,4 - Normal,25
+56,Kiran Ticket notes2,Ticket for ticket notes UAT.,Technical Support,1. New,7/5/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",7/9/25,4 - Normal,4
+57,Kirantest5,Kirantest5,Technical Support,1. New,4/10/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",4/17/25,1 - Critical,7
+58,Kirantest6,Kirantest6,Technical Support,1. New,7/21/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",7/24/25,1 - Critical,3
+59,Kiran SLA Test,Kiran SLA Test,Technical Support,1. New,3/23/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",4/11/25,4 - Normal,19
+60,SLA test vidya,SLA test for tech support,Technical Support,2. In Progress,4/28/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",5/11/25,4 - Normal,13
+61,Onboarding request,This is an onboarding request,HR Onboarding,1. New,3/22/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,4/21/25,,30
+62,Onboarding request,This is an onboarding request,HR Onboarding,1. New,2/23/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,2/25/25,,2
+63,Onboarding request,This is an onboarding request,HR Onboarding,2. In Progress,2/9/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",2/18/25,,9
+64,Onboarding request,This is an onboarding request,HR Onboarding,2. In Progress,2/22/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",3/21/25,,27
+65,CreatedByTest,,Technical Support,9. Reopen,3/24/25,"Kumar, Kiran",kkumar9127@plummer.com,"Dontamsetty, Vidyasagar",4/12/25,4 - Normal,19
+66,KiranTestCreatedFor,This ticket is for test.,Technical Support,1. New,3/23/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,4/5/25,4 - Normal,13
+67,Vidyatest1,Test with Vidya,Technical Support,7. Closed - Unresolved,5/30/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",6/18/25,4 - Normal,19
+68,VidyaTicket,This ticket to test with Vidya on behalf,Technical Support,5. Closed - Cancelled,7/30/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",8/27/25,4 - Normal,28
+69,KiranTest for Kiran,test,Technical Support,2. In Progress,7/29/25,KiranTest,KiranTest@plummer.com,"Kumar, Kiran",8/20/25,4 - Normal,22
+70,,"Onboarding request for John, Kristin",HR Onboarding,1. New,6/14/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/14/25,,0
+71,Onboarding request,"Onboarding request for KiranT, Kumar",HR Onboarding,1. New,3/21/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/25/25,,4
+72,Onboarding request,"New Hire : Josh, Ashley",HR Onboarding,2. In Progress,1/12/25,"Kumar, Kiran",kkumar9127@plummer.com,"Dontamsetty, Vidyasagar",1/12/25,,0
+73,KiranTest,Workflow notification test,Project Support,4. Closed - Resolved,3/22/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,4/15/25,4 - Normal,24
+74,CreatedforJohnny,Testing ticket,Project Support,1. New,2/26/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/12/25,4 - Normal,14
+75,Onboarding request," : New entry, Valid",HR Onboarding,1. New,7/4/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,7/25/25,,21
+76,Onboarding request,"New Hire: Test, User2",HR Onboarding,1. New,5/21/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,6/15/25,,25
+77,EMail Lists,,Technical Support,1. New,1/25/25,"Gainous, Shelly",sgainous@plummer.com,Unassigned,2/19/25,,25
+78,Onboarding request,"New Intern: Test1, Kiran",HR Onboarding,1. New,7/6/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/25/25,,19
+79,Onboarding request,"New Hire: Test1, Kiran2",HR Onboarding,1. New,3/16/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/24/25,,8
+80,Onboarding request,": test3, Kiran",HR Onboarding,2. In Progress,3/19/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",3/23/25,,4
+81,Onboarding request,"New Intern: Jack, user",HR Onboarding,1. New,6/6/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",6/6/25,,0
+82,Onboarding request,"New Hire: Test, Kiran5",HR Onboarding,1. New,5/25/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/10/25,,16
+83,Onboarding request,"New Hire: Test, KiranTest7",HR Onboarding,1. New,3/26/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",3/27/25,,1
+84,Onboarding request,"FT Transition: Testt, Kirantest57",HR Onboarding,1. New,7/2/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",7/15/25,,13
+85,Onboarding request,"New Intern: Test, User40",HR Onboarding,4. Closed - Resolved,3/3/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",3/14/25,,11
+86,Onboarding request,"New Intern: Test, User45",HR Onboarding,2. In Progress,4/7/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Cissell,Kevin",4/15/25,,8
+87,Install Power BI desktop,"Please install software request to my machin.
+Machine ID; kiran5656",Technical Support,6. Closed - No Response,1/22/25,"Kumar, Kiran",kkumar9127@plummer.com,"Dontamsetty, Vidyasagar",2/21/25,,30
+88,Install Power Bi dReport builder,Please install report builder version 20.08 in my machine the ID: ,Technical Support,1. New,6/21/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/9/25,,18
+89,Onboarding request,Offboarding Request,HR Offboarding,3. Pending,7/31/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",8/12/25,,12
+90,Onboarding request,Offboarding Request,HR Offboarding,3. Pending,7/5/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",7/8/25,,3
+91,Offboarding request,Offboarding Request,HR Offboarding,2. In Progress,7/6/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/6/25,,0
+92,Offboarding request,Offboarding Request,HR Offboarding,4. Closed - Resolved,3/10/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",3/29/25,,19
+93,Offboarding request,Offboarding Request,HR Offboarding,1. New,6/15/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/15/25,,30
+94,Offboarding request,Offboarding Request,HR Offboarding,1. New,6/6/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/16/25,,10
+95,Offboarding request,Offboarding Request,HR Offboarding,1. New,5/19/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/11/25,,23
+96,Test_TranscationTable,Testing for Transition metric table flows.,Technical Support,1. New,3/19/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,4/5/25,4 - Normal,17
+97,Test of Subticket type,For Transaction metric table.,Technical Support,4. Closed - Resolved,1/26/25,"Kumar, Kiran",kkumar9127@plummer.com,"Seher, Steve",2/7/25,4 - Normal,12
+98,Test_SR_2,Transaction table test.,Technical Support,4. Closed - Resolved,2/20/25,"Kumar, Kiran",kkumar9127@plummer.com,"Dontamsetty, Vidyasagar",3/3/25,4 - Normal,11
+99,Test DS Support,Testing DS Support,Technical Support,4. Closed - Resolved,1/30/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",2/23/25,4 - Normal,24
+102,Test Ticket to check SEC SR,Form has to submit a new record in SP list,Technical Support,2. In Progress,2/26/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",3/13/25,4 - Normal,15
+103,Test tciket for Software Review,,Technical Support,2. In Progress,3/19/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",3/20/25,4 - Normal,1
+104,Test ticket for SR testing,description to test,Technical Support,2. In Progress,4/11/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",4/18/25,,7
+105,Install  Citrix app,Install  Citrix application,Technical Support,2. In Progress,3/17/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Le, Kevin",3/24/25,,7
+106,Testing transaction metrics,Testing transaction metrics,Technical Support,4. Closed - Resolved,4/8/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Le, Kevin",4/25/25,,17
+107,Test_Sec-general,Testing of Sec-general demo,Technical Support,2. In Progress,7/28/25,"Kumar, Kiran",kkumar9127@plummer.com,"Le, Kevin",8/11/25,4 - Normal,14
+108,Test add rec,to check addition of record in SP,Technical Support,1. New,3/22/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",3/23/25,,1
+109,Ticket test,testing of SR,Technical Support,2. In Progress,3/24/25,"Kumar, Kiran",kkumar9127@plummer.com,"Le, Kevin",4/1/25,4 - Normal,8
+110,Testing Kiran,Testing Ticket,Purchase Support,1. New,3/3/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/9/25,,6
+112,Test IT Project V2,Test IT Project V2,Technical Support,1. New,1/5/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,1/14/25,4 - Normal,9
+113,Test Purchase ticket,,Technical Purchase,1. New,2/19/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,3/20/25,,29
+114,Test purchase ticket2,,Technical Purchase,1. New,5/24/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,6/5/25,,12
+115,Test Purchase Ticket,,Technical Purchase,4. Closed - Resolved,5/9/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,6/6/25,,28
+117,Test3 Techincal purchase,,Technical Purchase,1. New,6/26/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,7/16/25,,20
+118,Test 1,,Technical Purchase,1. New,1/7/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,1/12/25,2 - Urgent,5
+123,Test 2 Techincal Purchase ,Purchase Request,Technical Purchase,2. In Progress,4/6/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Kumar, Kiran",4/6/25,4 - Normal,0
+124,kiran_purtestticket,Purchase Request,Technical Purchase,2. In Progress,1/13/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",2/6/25,2 - Urgent,24
+125,Test3 Techincal Purchase,Purchase Request,Technical Purchase,1. New,6/23/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Chacon, Dyane",7/14/25,2 - Urgent,21
+126,Project ticket type,Technical Project Request,Technical Project,4. Closed - Resolved,2/16/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/5/25,,17
+127,KiranTest_purnew,Purchase Request,Technical Purchase,2. In Progress,6/22/25,"Kumar, Kiran",kkumar9127@plummer.com,"Martin, Josh",7/6/25,4 - Normal,14
+128,Test4 Techincal Purchase,Purchase Request,Technical Purchase,1. New,1/14/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Lockett, Johnny",1/19/25,4 - Normal,5
+129,Test5 Techincal purchase,Purchase Request,Technical Purchase,2. In Progress,6/26/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Chacon, Dyane",7/7/25,4 - Normal,11
+130,Test ticket 6,Purchase Request,Technical Purchase,2. In Progress,5/22/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",5/24/25,4 - Normal,2
+131,Test_Index,This ticket is to test the index column.,Technical Support,4. Closed - Resolved,7/12/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/25/25,1 - Critical,13
+132,Purchase test_13/02,Purchase Request,Technical Purchase,2. In Progress,5/4/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",5/5/25,4 - Normal,1
+133,Test Purchase reucrring,Purchase Request,Technical Purchase,7. Closed - Unresolved,2/3/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,2/18/25,4 - Normal,15
+134,PBI_Test,This ticket is to test PBI TimeZone.,Technical Support,1. New,4/19/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,5/16/25,4 - Normal,27
+135,Test Keyboard is not working,to test survey form v2 ,Technical Support,4. Closed - Resolved,7/9/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,Unassigned,7/14/25,4 - Normal,5
+136,SurevyForm_Test2,This ticket is to for Created For survey flow changes.,Technical Support,4. Closed - Resolved,6/13/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",7/5/25,4 - Normal,22
+137,SurveyForm_test3,Test ticket,Technical Support,4. Closed - Resolved,6/19/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",7/2/25,4 - Normal,13
+138,Survey Form v3,Testing form v3,Technical Support,4. Closed - Resolved,6/4/25,,,,6/6/25,4 - Normal,2
+139,New SurveyForm,"EMAIL: Hi Team, 
+
+
+I am facing an issue with my hard drive. Could you please resolve it ASAP.
+
+
+
+ 
+
+ [cid:6c49d884-0184-4d51-a90a-c6c8110e26e1]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,2. In Progress,2/13/25,"Kumar, Kiran",kkumar9127@plummer.com,"Kumar, Kiran",2/27/25,,14
+140,Test ticket for flow testing,Test ticket for flow testing,Technical Support,3. Pending,1/15/25,"Dontamsetty, Vidyasagar",vdontamsetty9146@plummer.com,"Dontamsetty, Vidyasagar",2/2/25,,18
+141,Automatic reply: Tech Support Survey,"Hello,
+
+This email is no longer in service. Please contact Plummer at 817-806-1700 for
+any questions.",Technical Support,1. New,3/25/25,"Chilton, Luke",Lchilton@plummer.com,Unassigned,4/1/25,,7
+142,Automatic reply: Tech Support Survey,"I am currently out of the office, for IT issues please submit a ticket here:
+https://teams.microsoft.com/l/message/19:466d6f6ae93c428aa0df7625da479250@thread.skype/1710975007136?tenantId=da2f0fe6-adff-4f18-a87c-96fcb04a4dfa&groupId=ec8422a5-124f-49bd-88de-20f18d3a5bab&par",Technical Support,2. In Progress,3/22/25,"Adedokun, David",dadedokun@plummer.com,"Kumar, Kiran",4/7/25,,16
+143,Workflowtesting,This the request for to test the workflow notifications.,Technical Support,1. New,1/24/25,"Kumar, Kiran",kkumar9127@plummer.com,"Dontamsetty, Vidyasagar",2/15/25,1 - Critical,22
+144,Automatic reply: Tech Support Survey,"Hello,
+
+I am in the field May 29th & 30th  so please expect a delayed response from me.
+Please call me on my cell phone or for immediate assistance please contact
+Nathan Saxe nsaxe@plummer.com or Landon Kapavik lkapavik@plummer.com
+
+
+
+
+
+Thanks!
+
+214-405-4664  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ",Technical Support,1. New,2/8/25,"Metzler, Karen",kmetzler@plummer.com,Unassigned,2/17/25,,9
+145,Automatic reply: Tech Support Survey,"This email is no longer in service, please contact Patrick OBrien for any
+questions or concerns.",Technical Support,1. New,4/28/25,"Toussaint, Nick",ntoussaint@plummer.com,Unassigned,5/26/25,,28
+146,Automatic reply: Tech Support Survey,"This email is no longer in service, please contact, Mike Kennedy
+(mkennedy@plummer.com) for any additional questions.",Technical Support,1. New,4/12/25,Ben Talley,btalley@plummer.com,Unassigned,5/3/25,,21
+147,Automatic reply: Tech Support Survey,"
+
+I am out of the office at a conference and will return on Wednesday, June 11.
+
+ ",Technical Support,1. New,7/8/25,"Leppla, Hannah",hleppla@plummer.com,Unassigned,8/4/25,,27
+148,System login issue,"Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,2/8/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,2/18/25,,10
+149,System login issue,"Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,7/2/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/5/25,,3
+150,System login issue,"Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,3/13/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,3/24/25,,11
+151,System login issue,"Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,7/3/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,7/22/25,,19
+152,System login issue,"Hi team,
+ 
+I am facing the issue of login authentication for the system.
+
+
+
+
+
+
+
+ 
+
+ [cid:a365fbd9-18dc-42b5-9f4a-0a86d056e7f7]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,4/15/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,4/29/25,,14
+153,Test_SystemIssue,"
+
+Mail system production test ticket. 
+
+
+
+
+
+ 
+
+ [cid:b7569b72-a603-4614-9dba-03c9dac5c470]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,5/15/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,5/17/25,,2
+155,System issue login,"Hi team, 
+
+
+I have an issue with the system. 
+
+
+
+
+
+ 
+
+ [cid:20491f81-a618-4ea9-a479-b0645ffcddc4]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,5/20/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,6/7/25,,18
+156,System login issues,"Hi team, 
+
+
+I have an issue with the system. 
+
+
+
+
+
+
+
+ 
+
+ [cid:c2da00d2-a746-490f-bf71-fa45726ef10c]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,1/16/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,2/8/25,,23
+157,PLEASE HELP!,"I do not need help, I am just testing the helpdesk email system.
+
+
+Thanks,
+
+
+
+
+ 
+
+A logo of a tree and a river Description automatically generated
+[cid:2ca7dbc6-0062-4fc0-bccc-ccbf6c6467f9] [http://www.plummer.com/]
+
+Jon Paul Chatha
+Technology Support Specialist
+
+14755 Preston Rd.
+Suite 420
+Dallas, TX 75254
+D: 972.996.5674
+
+jchatha9161@plummer.com
+www.plummer.com [http://www.plummer.com/]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+[cid:962c3367-dce1-4266-8945-75deed306560]  Please consider the environment
+before printing this e-mail.",Technical Support,1. New,5/23/25,Jon Chatha,jchatha9161@plummer.com,Unassigned,5/27/25,,4
+158,System login issues,"Hi team, 
+
+
+I have an issue with the system. 
+
+
+
+
+
+
+
+ 
+
+ [cid:c2da00d2-a746-490f-bf71-fa45726ef10c]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,1/11/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,1/24/25,,13
+159,PLEASE HELP!,"I do not need help, I am just testing the helpdesk email system.
+
+
+Thanks,
+
+
+
+
+ 
+
+A logo of a tree and a river Description automatically generated
+[cid:2ca7dbc6-0062-4fc0-bccc-ccbf6c6467f9] [http://www.plummer.com/]
+
+Jon Paul Chatha
+Technology Support Specialist
+
+14755 Preston Rd.
+Suite 420
+Dallas, TX 75254
+D: 972.996.5674
+
+jchatha9161@plummer.com
+www.plummer.com [http://www.plummer.com/]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+[cid:962c3367-dce1-4266-8945-75deed306560]  Please consider the environment
+before printing this e-mail.",Technical Support,1. New,7/2/25,Jon Chatha,jchatha9161@plummer.com,Unassigned,7/20/25,,18
+160,Unable to login Microsoft account,"Hi Team, 
+
+
+I am unable to log in Microsoft account. Please help me out on this. 
+
+
+
+
+
+ 
+
+ [cid:3790c69e-3703-46a1-a333-67aa085f9b6d]
+
+ 
+
+Kiran Kumar
+
+BI Analyst/Developer
+
+ 
+
+Remote
+
+
+kkumar9127@plummer.com
+www.plummer.com [http://www.plummer.com]
+
+This message, and any attachments to it, may contain information that is
+privileged, confidential, and exempt from disclosure under applicable law. If
+the reader of this message is not the intended recipient, you are notified that
+any use, dissemination, distribution, copying, or communication of this message
+is strictly prohibited. If you have received this message in error, please
+notify the sender immediately by return e-mail and delete the message and any
+attachments.
+
+Please consider the environment before printing this e-mail. 
+
+ ",Technical Support,1. New,7/21/25,"Kumar, Kiran",kkumar9127@plummer.com,Unassigned,8/14/25,,24
+161,System not working,Raise a ticket as my system is not working,Technical Support,1. New,6/8/25,,,,6/27/25,,19
+162,test ticket,raise a ticket for system not working,Technical Support,1. New,6/28/25,,,,7/6/25,,8
+163,Device not turning on,It is not turning on.. Can you raise a ticket,Technical Support,1. New,2/15/25,,,,3/11/25,,24

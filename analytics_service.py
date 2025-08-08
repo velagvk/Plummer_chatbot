@@ -36,10 +36,10 @@ class QueryResponse(BaseModel):
 
 # --- Load DataFrame and Initialize LLM ---
 try:
-    df = pd.read_csv('IT-tickets.csv')
-    print("IT-tickets.csv loaded successfully.")
+    df = pd.read_csv('IT-Tickets-v1.csv')
+    print("IT-Tickets-v1.csv loaded successfully.")
 except FileNotFoundError:
-    print("FATAL ERROR: IT-tickets.csv not found. The service cannot start.")
+    print("FATAL ERROR: IT-Tickets-v1.csv not found. The service cannot start.")
     df = None
 
 # Initialize Azure OpenAI LLM for the Agent
@@ -70,41 +70,31 @@ RULES:
 - Your output MUST be the direct result of the pandas query. Do not provide any conversational text or explanation.
 - IMPORTANT: When working with date columns, always convert them to datetime objects using pd.to_datetime() before sorting or comparing.
 
-COLUMN DESCRIPTIONS:
-- "ID": A unique numeric identifier for each ticket.
-- "Ticket Title": A short summary of the support request.
-- "Support_Request": The full, detailed description of the user's issue.
-- "Ticket_Type", "Ticket Class": Categories for the ticket, like "Technical Support" or "Software".
-- "Status": The current state of the ticket (e.g., '7. Closed - Unresolved').
-- "IT_TECH_Scope", "IT_TECH_Impact": Technical assessment of the ticket's scope and impact.
-- "VScope", "VImpact", "VPriority": Business-level assessment of scope, impact, and priority, likely numeric codes.
-- "Tech_Tag", "Resolution_Tag": Keywords for the technical area and the final resolution.
-- "Created", "Modified", "Closed Date", "Assigned Date": Timestamps for the ticket's lifecycle events. These are stored as STRING dates in format "M/D/YYYY H:MM AM/PM". ALWAYS convert to datetime using pd.to_datetime() before any date operations.
-- "CreatedBy", "ModifiedBy": The full names of the individuals who created or modified the ticket.
-- "CreatedEmail": The email address of the person who created the ticket.
-- "FirstName", "LastName", "JobTitle", "Department", "Office", "MobilePhone": Detailed profile information about the person who submitted the ticket.
-- "CreatedDay", "CreatedMonth", "CreatedYear": The day, month, and year the ticket was created. Use these for time-based analysis.
-- "IT_TECH_Team", "IT_TECH_Location": The specific IT team and physical location responsible.
+COLUMNS (exactly as present in df):
+- "ID": Unique numeric identifier for each ticket.
+- "Ticket Title": Short summary of the support request.
+- "Support_Request": Full, detailed description of the user's issue.
+- "Ticket_Type": Category of the ticket (e.g., "Technical Support", "HR Onboarding").
+- "Status": The current state of the ticket.
+- "Created Date": Ticket creation timestamp stored as a STRING date. Convert with pd.to_datetime() for any date operations.
+- "CreatedBy": Full name of the person who created the ticket.
+- "CreatedEmail": Email address of the person who created the ticket.
 - "Assigned To": The technician or team the ticket is assigned to.
-- "XRef%23": A cross-reference number. Treat as 'XRefID'. The '%23' is a URL-encoded '#'.
-- "VLeadership": A flag indicating if leadership is involved, likely 'Yes' or 'No'.
-- "Type of Ticket Request": A more specific sub-category for the ticket request.
-- "SLA Alert": A flag indicating if a Service Level Agreement has been breached.
-- "CC": Other people copied on the ticket.
-- "Created For": The name of the person on whose behalf the ticket was created.
-- "HRGroup": The HR group the user belongs to.
-- "Project Link": A URL link to an associated project.
-- "Offboarding-CalendarUpdate": A flag related to the employee offboarding process.
-- "Closed": The name of the person who closed the ticket.
-- "Created_For_FirstName", "Created_For_LastName", "Created_For_JobTitle", "Created_For_Department", "Created_For_Office", "Created_For_MobilePhone": Detailed information about the person for whom the ticket was created.
-- "Created_For_Email": The email of the person for whom the ticket was created.
-- "IND_ID": A unique identifier for the individual user.
-- "Priority": The overall priority level of the ticket (e.g., '4 - Normal').
+- "Closed Date": Ticket closed timestamp stored as a STRING date. Convert with pd.to_datetime() for any date operations.
+- "Priority": Priority level of the ticket (e.g., "1 - Critical", "4 - Normal").
+- "Resolution days": The number of days taken to resolve the ticket. If this value is missing, compute it as (Closed Date - Created Date).dt.days for closed tickets.
 
-IMPORTANT EXAMPLES FOR DATE QUERIES:
-- To find the oldest ticket by creation date: df.loc[df['Created'].notna()].assign(Created_dt=pd.to_datetime(df['Created'])).sort_values('Created_dt').iloc[0]
-- To sort by creation date: df.assign(Created_dt=pd.to_datetime(df['Created'])).sort_values('Created_dt')
-- Always use pd.to_datetime() when working with the Created, Modified, Closed Date, or Assigned Date columns.
+DATE USAGE EXAMPLES:
+- Sort by creation date:
+    df.assign(Created_dt=pd.to_datetime(df['Created Date'], errors='coerce')).sort_values('Created_dt')
+- Average resolution days (using column directly when available):
+    df.loc[df['Resolution days'].notna(), 'Resolution days'].mean()
+- Average resolution days (computing missing values from dates when needed):
+    tmp = df.assign(
+        Created_dt=pd.to_datetime(df['Created Date'], errors='coerce'),
+        Closed_dt=pd.to_datetime(df['Closed Date'], errors='coerce')
+    )
+    (tmp['Resolution days'].fillna((tmp['Closed_dt'] - tmp['Created_dt']).dt.days)).mean()
 """
 
 # --- Create the LangChain Agent ---
