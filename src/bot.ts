@@ -22,8 +22,8 @@ dotenv.config();
 
 // Define a list of privileged users by their email address
 const aAadhardcodedPrivilegedUsers = [
-    'vkumar9174@plummer.com',
-    'another.privileged.user@example.com' 
+    
+    'upendrau9175@plummer.com',
 ];
 
 export class TeamsOpenAIBot extends TeamsActivityHandler {
@@ -55,7 +55,8 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
       const membersAdded = context.activity.membersAdded ?? [];
       for (const member of membersAdded) {
         if (member.id !== context.activity.recipient.id) {
-          await this.sendWelcomeMessage(context);
+          // Send a personalized welcome card
+          await this.sendWelcomeAndModeSelectionCard(context, member.name || 'there');
         }
       }
       await next();
@@ -67,7 +68,6 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
       const conversationData = await this.conversationDataAccessor.get(context, { 
         messages: [], 
         currentMode: 'none',
-        userRole: undefined,
         userEmail: undefined,
         waitingForTicketConfirmation: false,
         pendingTicketContext: undefined
@@ -75,24 +75,23 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
 
       // Handle card submissions for role selection
       if (context.activity.value && context.activity.value.action === 'selectRole') {
-        conversationData.userRole = context.activity.value.role;
-        await this.conversationDataAccessor.set(context, conversationData);
-        await this.conversationState.saveChanges(context);
-        console.log('Role set to:', context.activity.value.role);
-        await this.sendDynamicModeSelectionCard(context, context.activity.value.role);
-        return; // Stop processing after handling the card
+        // This is now legacy code and can be removed or repurposed. 
+        // For now, we'll just log it.
+        console.log('Legacy selectRole card submitted. Ignoring.');
+        return;
       }
 
       // Handle card submissions for mode selection
       if (context.activity.value && context.activity.value.action === 'selectMode') {
-        conversationData.currentMode = context.activity.value.mode;
+        const selectedMode = context.activity.value.mode;
+        conversationData.currentMode = selectedMode;
         await this.conversationDataAccessor.set(context, conversationData);
         await this.conversationState.saveChanges(context);
-        console.log('Mode set to:', context.activity.value.mode);
+        console.log('Mode set to:', selectedMode);
         
         // Send custom message based on selected agent
         let responseMessage: string;
-        switch (context.activity.value.mode) {
+        switch (selectedMode) {
           case 'Support Agent':
             responseMessage = "Hi, I am your IT support Agent, how may I help you today?";
             break;
@@ -103,10 +102,16 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
             responseMessage = "Hi, I am your Knowledge retrieval Agent, how may I help you today?";
             break;
           default:
-            responseMessage = `You have selected **${context.activity.value.mode}**. How can I help you today?`;
+            responseMessage = `You have selected **${selectedMode}**. How can I help you today?`;
         }
         
         await context.sendActivity(responseMessage);
+
+        // If the user selected the placeholder agent, send the coming soon message immediately.
+        if (selectedMode === 'Knowledge retrieval Agent') {
+          await context.sendActivity("This is a placeholder for searching internal documents. This feature is coming soon!");
+        }
+
         return; // Stop processing after handling the card
       }
 
@@ -127,7 +132,7 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
     // });
   }
 
-  private async sendDynamicModeSelectionCard(context: TurnContext, userRole: string): Promise<void> {
+  private async sendWelcomeAndModeSelectionCard(context: TurnContext, userName: string): Promise<void> {
     let userEmail = '';
     try {
       // Fetch the user's profile details from Teams
@@ -153,20 +158,23 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
       {
         type: 'Action.Submit',
         title: 'Support Agent',
+        style: 'positive', // Set to green
         data: { action: 'selectMode', mode: 'Support Agent' }
       },
       {
         type: 'Action.Submit',
-        title: 'Knowledge retrieval Agent',
+        title: 'Knowledge retrieval Agent (Coming soon)',
+        style: 'default', // Set to default to be visually distinct
         data: { action: 'selectMode', mode: 'Knowledge retrieval Agent' }
       }
     ];
   
-    // If the user is privileged, add the 'Data insights Agent' button
+    // If the user is privileged, insert the 'Data insights Agent' button in the middle
     if (isPrivileged) {
-      actions.push({
+      actions.splice(1, 0, {
         type: 'Action.Submit',
         title: 'Data insights Agent',
+        style: 'positive', // Set to green
         data: { action: 'selectMode', mode: 'Data insights Agent' }
       });
     }
@@ -178,13 +186,13 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
       body: [
         {
           type: 'TextBlock',
-          text: `Welcome ${userRole}! 👋`,
+          text: `Welcome ${userName}! 👋`,
           size: 'Large',
           weight: 'Bolder'
         },
         {
           type: 'TextBlock',
-          text: 'Please select how you would like to use the assistant:',
+          text: 'Please select an appropriate agent.', // Updated text
           wrap: true
         }
       ],
@@ -192,63 +200,6 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
     });
   
     await context.sendActivity({ attachments: [modeCard] });
-  }
-
-  private async sendWelcomeMessage(context: TurnContext): Promise<void> {
-    const welcomeCard = CardFactory.adaptiveCard({
-      type: 'AdaptiveCard',
-      version: '1.2',
-      body: [
-        {
-          type: 'TextBlock',
-          text: 'Welcome to the AI Assistant! 🤖',
-          size: 'Large',
-          weight: 'Bolder'
-        },
-        {
-          type: 'TextBlock',
-          text: 'Please select your role to get started:',
-          wrap: true
-        },
-        {
-          type: 'TextBlock',
-          text: '• **IT Admin**: Full access to all ticket analytics and system management',
-          wrap: true,
-          size: 'Small'
-        },
-        {
-          type: 'TextBlock',
-          text: '• **Leadership**: Can view analytics for all tickets across the organization',
-          wrap: true,
-          size: 'Small'
-        },
-        {
-          type: 'TextBlock',
-          text: '• **Normal User**: Can view analytics only for tickets you have created',
-          wrap: true,
-          size: 'Small'
-        }
-      ],
-      actions: [
-        {
-          type: 'Action.Submit',
-          title: 'IT Admin',
-          data: { action: 'selectRole', role: 'IT Admin' }
-        },
-        {
-          type: 'Action.Submit',
-          title: 'Leadership',
-          data: { action: 'selectRole', role: 'Leadership' }
-        },
-        {
-          type: 'Action.Submit',
-          title: 'Normal User',
-          data: { action: 'selectRole', role: 'Normal User' }
-        }
-      ]
-    });
-
-    await context.sendActivity({ attachments: [welcomeCard] });
   }
 
   private async handleMessage(context: TurnContext): Promise<void> {
@@ -301,7 +252,6 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
     const conversationData = await this.conversationDataAccessor.get(context, { 
       messages: [], 
       currentMode: 'none',
-      userRole: undefined,
       userEmail: undefined,
       waitingForTicketConfirmation: false,
       pendingTicketContext: undefined
@@ -309,7 +259,14 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
 
     // Handle greeting detection - respond with welcome message when user says 'hi'
     if (text === 'hi' || text === 'hello' || text === 'hey') {
-      await this.sendWelcomeMessage(context);
+      await this.sendWelcomeAndModeSelectionCard(context, context.activity.from.name || 'there');
+      return;
+    }
+
+    // Handle the specific "switch agent" command directly
+    if (text === 'switch agent') {
+      await context.sendActivity("Which agent would you like to switch to?");
+      await this.sendWelcomeAndModeSelectionCard(context, context.activity.from.name || 'there');
       return;
     }
 
@@ -317,13 +274,6 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
     if (this.isAgentSwitchRequest(text)) {
       const requestedAgent = this.extractRequestedAgent(text);
       if (requestedAgent) {
-        // Check if user has a role, if not, show role selection first
-        if (!conversationData.userRole) {
-          await context.sendActivity("Please select your role first to switch agents.");
-          await this.sendWelcomeMessage(context);
-          return;
-        }
-        
         // Update the current mode
         conversationData.currentMode = requestedAgent;
         await this.conversationDataAccessor.set(context, conversationData);
@@ -350,7 +300,7 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
       } else {
         // User requested to switch but didn't specify which agent
         await context.sendActivity("Which agent would you like to switch to?");
-        await this.sendDynamicModeSelectionCard(context, conversationData.userRole || 'User');
+        await this.sendWelcomeAndModeSelectionCard(context, context.activity.from.name || 'there');
         return;
       }
     }
@@ -364,24 +314,23 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
         await context.sendActivity("🔍 Thinking...");
         await context.sendActivity("This is a placeholder for searching internal documents. This feature is coming soon!");
         return;
-      case 'Data insights Agent':
-        // First, classify the user's intent to check if they are asking for support
+      case 'Data insights Agent': {
+        // Classify the user's intent based on the full conversation context.
         const analyticsIntent: { responseType: IntentResponseType; reasoning: string; } = await this.classifyUserIntent(context.activity.text, conversationData.messages);
-        if (analyticsIntent.responseType === 'technical_support' || analyticsIntent.responseType === 'direct_ticket') {
-            await context.sendActivity("It looks like you're asking for technical support. For that, you'll need to switch to the 'Support Agent'.");
-            await this.sendDynamicModeSelectionCard(context, conversationData.userRole || 'User');
+        
+        if (analyticsIntent.responseType === 'technical_support' || 
+            analyticsIntent.responseType === 'direct_ticket' ||
+            analyticsIntent.responseType === 'ticket_status_inquiry') {
+            await context.sendActivity("It looks like you're asking for technical support or ticket status. For that, you'll need to switch to the 'Support Agent'.");
+            await this.sendWelcomeAndModeSelectionCard(context, context.activity.from.name || 'there');
             return;
         }
 
         console.log('Executing analytics case for query:', context.activity.text);
         
-        // Check if user has selected a role
-        if (!conversationData.userRole) {
-          await context.sendActivity('Please select your role first by using the welcome card.');
-          return;
-        }
+        // The query rephrasing logic is being removed to revert to the simpler model.
+        // const rephrasedQuery = await this.rephraseQueryForAnalytics(context.activity.text, conversationData.messages);
         
-        await context.sendActivity('🧠 Analyzing your request, please wait a moment...');
         try {
           // Get user email (try from Teams, fallback to default)
           let userEmail = 'unknown@example.com';
@@ -397,7 +346,11 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
             console.log('Could not get user email, using default');
           }
           
-          console.log(`Analytics request for ${conversationData.userRole} (${userEmail})`);
+          // Determine user role based on the privileged list
+          const isPrivileged = aAadhardcodedPrivilegedUsers.includes(userEmail.toLowerCase());
+          const userRoleForAnalytics = isPrivileged ? 'IT Admin' : 'Normal User';
+
+          console.log(`Analytics request for ${userRoleForAnalytics} (${userEmail})`);
           
           // Prepare the history to be sent to the analytics service (limit to last 5 messages for token optimization)
           const recentMessages = conversationData.messages.slice(-5);
@@ -407,9 +360,9 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
           }));
 
           const analyticsResponse = await axios.post('http://127.0.0.1:5001/analyze', {
-            query: context.activity.text,
+            query: context.activity.text, // Reverted to use original query
             history: history,
-            user_role: conversationData.userRole,
+            user_role: userRoleForAnalytics,
             user_email: userEmail
           });
           
@@ -418,7 +371,9 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
           if (analyticsResponse.data && analyticsResponse.data.result) {
             // Send the text result back to the user
             console.log('Analytics service response:', analyticsResponse.data.result);
-            await context.sendActivity(analyticsResponse.data.result);
+            const powerBiLink = "https://app.powerbi.com/groups/e4843592-3461-46ed-8373-17b0ce6d06d1/reports/87ce996a-7c64-4049-ace2-6bc127046b8c/37bfa6f8cd49c7278ea7?experience=power-bi";
+            const responseWithLink = `${analyticsResponse.data.result}\n\nFor further analysis, you can view the [Power BI report](${powerBiLink}).`;
+            await context.sendActivity(responseWithLink);
           } else {
             console.log('No result in analytics response:', analyticsResponse.data);
             await context.sendActivity("Sorry, I couldn't get an analysis for that. Please try rephrasing your question.");
@@ -428,6 +383,7 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
           await context.sendActivity('Sorry, the analytics service is currently unavailable. Please try again later.');
         }
         return;
+      }
       case 'Support Agent':
       default:
         console.log('Executing general purpose/default case for mode:', conversationData.currentMode);
@@ -466,16 +422,35 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
 
         try {
           // Classify the user's intent using AI
-          await context.sendActivity('🤔 Understanding your request...');
           console.log('\n--- CALLING classifyUserIntent (OpenAI) ---');
           const intentClassification: { responseType: IntentResponseType; reasoning: string; } = await this.classifyUserIntent(context.activity.text, conversationData.messages);
           console.log('User intent classified as:', intentClassification.responseType);
 
           // Handle wrong mode for analytics inquiry
           if (intentClassification.responseType === 'analytics_inquiry') {
-              await context.sendActivity("It looks like you're asking an analytics question. For that, you'll need to switch to the 'Data insights Agent'.");
-              await this.sendDynamicModeSelectionCard(context, conversationData.userRole || 'User');
+            // Determine if user is privileged
+            let userEmail = 'unknown@example.com';
+            try {
+              if (context.activity.channelId === 'msteams') {
+                const member = await TeamsInfo.getMember(context, context.activity.from.id);
+                userEmail = member.email || member.userPrincipalName || 'unknown@example.com';
+              } else {
+                // For emulator testing, use a default email
+                userEmail = 'vkumar9174@plummer.com';
+              }
+            } catch (emailError) {
+              console.log('Could not get user email, using default');
+            }
+
+            const isPrivileged = aAadhardcodedPrivilegedUsers.includes(userEmail.toLowerCase());
+
+            if (!isPrivileged) {
+              await context.sendActivity("You do not have sufficient permissions to access data insights.");
               return;
+            }
+            await context.sendActivity("It looks like you're asking an analytics question. For that, you'll need to switch to the 'Data insights Agent'.");
+            await this.sendWelcomeAndModeSelectionCard(context, context.activity.from.name || 'there');
+            return;
           }
 
           let response: string;
@@ -490,7 +465,6 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
 
             case 'technical_support':
               // Provide technical support with ticket option
-              await context.sendActivity('🔧 Generating technical solution...');
               response = await this.generateTechnicalSupportResponse(context.activity.text, conversationData.messages);
               
               // Set flag to wait for ticket confirmation
@@ -625,6 +599,10 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
     supportRequest?: string;
     scope?: string;
   } = { title: '', impact: 'Slight' }): Promise<void> {
+    
+    // Get the user's name dynamically
+    const userName = context.activity.from.name || 'Valued User';
+
     const userRequest = context.activity.text;
     const ticketFormCard = CardFactory.adaptiveCard({
       "type": "AdaptiveCard",
@@ -658,7 +636,7 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
                           },
                           {
                               "type": "TextBlock",
-                              "text": "Welcome Vijay Kumar",
+                              "text": `Welcome ${userName}`,
                               "isSubtle": true,
                               "spacing": "None"
                           }
@@ -769,7 +747,6 @@ export class TeamsOpenAIBot extends TeamsActivityHandler {
         .join('\n');
 
       const classificationPrompt = `You are an intelligent IT support assistant that classifies user queries to determine the appropriate response strategy.
-
 RECENT CONVERSATION:
 ${recentContext}
 
@@ -928,7 +905,7 @@ IMPORTANT: After providing your technical solution, you MUST end your response w
 
 "---
 
-If these steps don't resolve the issue, I can help you create an IT support ticket. Would you like me to prepare a ticket for you?"
+**If these steps don't resolve the issue, I can help you create an IT support ticket. Would you like me to prepare a ticket for you?**"
 
 Guidelines:
 - Provide clear, step-by-step troubleshooting instructions
